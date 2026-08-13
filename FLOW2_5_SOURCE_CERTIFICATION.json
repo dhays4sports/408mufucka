@@ -1,0 +1,106 @@
+{
+  "sprint": "408-FLOW-2.5",
+  "senderRuntime": "408-FLOW-2.5",
+  "receiverRuntime": "CoverageFit v3.20.62",
+  "status": "deployable_source_certified",
+  "certificationType": "paired end-to-end conversion source certification",
+  "runtimeBehaviorChanged": false,
+  "certifiedScope": [
+    "seven form-first property acquisition routes",
+    "first lead before three post-lead questions",
+    "personalized payoff and explicit optional CoverageFit invitation",
+    "Finish for Now first-lead preservation",
+    "renter bypass of homeowner assessment",
+    "private zero-repeat handoff and URL cleanup",
+    "question-two runtime stability",
+    "existing Home assessment and Protection Score",
+    "completed consultation record as the second intake point",
+    "private Save as PDF / Print report delivery"
+  ],
+  "automatedQa": {
+    "crossProjectContractChecks": {
+      "passed": 74,
+      "failed": 0
+    },
+    "runtimeConversionScenarios": {
+      "passed": 8,
+      "failed": 0
+    },
+    "saveableReportPromiseChecks": {
+      "passed": 37,
+      "failed": 0
+    },
+    "flow24Checks": {
+      "passed": 60,
+      "failed": 0
+    },
+    "flow24RuntimeScenarios": {
+      "passed": 5,
+      "failed": 0
+    },
+    "flow23Checks": {
+      "passed": 63,
+      "failed": 0
+    },
+    "flow23RuntimeScenarios": {
+      "passed": 4,
+      "failed": 0
+    },
+    "formFirstRegressionChecks": {
+      "passed": 103,
+      "failed": 0
+    },
+    "occupationalVisualRegressionChecks": {
+      "passed": 72,
+      "failed": 0
+    },
+    "homeMobileAccessibilityPerformanceChecks": {
+      "passed": 16,
+      "failed": 0
+    },
+    "staticChecks": {
+      "passed": 296,
+      "failed": 0
+    },
+    "internalLinks": {
+      "checked": 325,
+      "broken": 0
+    },
+    "coverageFitReceiverChecks": {
+      "passed": 30,
+      "failed": 0
+    },
+    "coverageFitRegressionFiles": {
+      "passed": 166,
+      "failed": 0
+    },
+    "deepQrRouteAssetChecks": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "frozenHashes": {
+    "senderScript": "0ac4fe4fc48ed269d711ce56d11439d715e5d7afb5d4964ea0d94c8d5b87660b",
+    "senderPostLeadEngagement": "2f63b3aafe7f9112533fc3aba20fe1d7688c2def2027bc516f041d3bc1f90d11",
+    "senderCoverageFitInvitation": "e328485e65d1dcc48ee4b1ada845d2975d20eaae07106fcf59e7f20f8c85e454",
+    "senderCoverageFitLauncher": "239d8ca692c7f392a1152356cf07c7522aebcb35b6ef6c03891eb82110e9e462",
+    "senderProspectProfile": "9b588ad7003ee4e1ce915f5b75a215b7ccc478f262a6c7824bae26a9b08dc7c3",
+    "protectionScore": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8",
+    "homeAssessmentConfig": "f4f39337871c7ce6952b77607470dcef963a039b2e467eaedfe5e35b6348553b"
+  },
+  "liveProduction": {
+    "status": "pending",
+    "deploymentPerformed": false,
+    "realFormspreeReceiptVerified": false,
+    "cloudflareConsultationVerified": false,
+    "privateReportVerified": false,
+    "physicalDevicePdfVerified": false,
+    "runbook": "FLOW2_5_PRODUCTION_CONVERSION_RUNBOOK.md"
+  },
+  "postCertificationHotfix": {
+    "id": "408-HOME-2.7-QR-ASSET-HOTFIX",
+    "runtimeBehaviorChanged": false,
+    "scope": "Home HTML public asset/link resolution under nested /home/qr/{ZIP}/{variant}/ rewrite routes",
+    "liveProductionVerificationRequired": true
+  }
+}

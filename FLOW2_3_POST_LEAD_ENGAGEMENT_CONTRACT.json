@@ -1,0 +1,65 @@
+{
+  "sprint": "408-FLOW-2.3",
+  "runtime": "408-FLOW-2.3",
+  "receiver": "CoverageFit v3.20.61",
+  "principle": "capture the lead first, then earn optional assessment continuation with a short personalized payoff",
+  "routes": ["home", "buyer", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "excludedProductFlows": ["life"],
+  "sequence": [
+    "lead_form",
+    "lead_submission_attempt",
+    "lead_receipt",
+    "home_review_goal",
+    "housing_context",
+    "review_timing",
+    "personalized_payoff",
+    "prospect_selected_destination"
+  ],
+  "leadStatuses": ["confirmed", "pending", "unconfirmed", "local-fallback"],
+  "questionCount": 3,
+  "semanticFields": {
+    "home_review_goal": ["farmers_fit", "coverage_fit", "home_auto_bundle", "exploring"],
+    "housing_context": ["owner_occupied", "landlord", "buyer", "renter"],
+    "review_timing": ["shopping_now", "renewal_60", "later", "not_sure"]
+  },
+  "continuation": {
+    "automatic": false,
+    "coverageFitChoiceLabel": "Get My Protection Score",
+    "coverageFitPromise": "educational Protection Score and free downloadable Home Protection Snapshot",
+    "deferChoiceLabel": "Not now — Dylan can follow up",
+    "renterDestination": "/contact/?intent=renters"
+  },
+  "leadContract": {
+    "formspreeSubmissionOccursBeforeQuestions": true,
+    "engagementCreatesSecondLead": false,
+    "leadSurvivesQuestionAbandonment": true,
+    "coverageFitCompletionRemainsTheSecondLeadIntakePoint": true
+  },
+  "handoff": {
+    "profileRebuiltAfterAnswers": true,
+    "semanticAnswersStoredInProspectProfile": true,
+    "completedCoverageFitConsultationReceivesContext": true,
+    "personalDataAddedToVisible408FarmersUrl": false,
+    "coverageFitUrlCleanupOwnedByReceiver": true
+  },
+  "accessibility": {
+    "oneQuestionPerScreen": true,
+    "progressbar": true,
+    "politeLiveAnnouncements": true,
+    "keyboardOperable": true,
+    "visibleFocusInherited": true,
+    "reducedMotion": true,
+    "forcedColors": true,
+    "mobileReflow": true
+  },
+  "unchanged": {
+    "formFieldsAndRequiredConsent": true,
+    "formspreeEndpoint": true,
+    "attribution": true,
+    "CoverageFitReceiverSource": true,
+    "CoverageFitAssessmentQuestions": true,
+    "ProtectionScore": true,
+    "lifeApplication": true
+  },
+  "privacy": "Only bounded marketing-intent answers and operational step metadata enter engagement telemetry. Name, email, phone, address, consent, and free-form values are excluded."
+}

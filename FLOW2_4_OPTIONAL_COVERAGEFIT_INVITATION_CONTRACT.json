@@ -1,0 +1,70 @@
+{
+  "sprint": "408-FLOW-2.4",
+  "runtime": "408-FLOW-2.4",
+  "receiver": "CoverageFit v3.20.61",
+  "principle": "CoverageFit is an optional value exchange, never an automatic redirect",
+  "routes": ["home", "buyer", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "excludedProductFlows": ["life"],
+  "entryStage": "after_post_lead_personalized_payoff",
+  "invitation": {
+    "headline": "Would you like to get a head start on Dylan’s review?",
+    "leadAlreadySubmitted": true,
+    "choiceCount": 2,
+    "choices": {
+      "accept": {
+        "label": "Continue to CoverageFit",
+        "outcome": "open the existing CoverageFit assessment",
+        "promise": "receive an educational Protection Score and free downloadable Home Protection Snapshot after completing the assessment"
+      },
+      "defer": {
+        "label": "Finish for Now",
+        "outcome": "remain on 408FARMERS with confirmation that Dylan can follow up"
+      }
+    }
+  },
+  "launchGuards": {
+    "automaticLaunch": false,
+    "timerLaunch": false,
+    "pageLoadLaunch": false,
+    "questionCompletionLaunch": false,
+    "payoffViewLaunch": false,
+    "legacyHomeConfirmationUsed": false,
+    "explicitAcceptClickRequired": true,
+    "assetFailureCanAutoLaunch": false,
+    "degradedModeRequiresExplicitClick": true
+  },
+  "renter": {
+    "coverageFitHomeAssessment": false,
+    "acceptLabel": "View Renters Options",
+    "destination": "/contact/?intent=renters",
+    "deferAvailable": true
+  },
+  "leadContract": {
+    "formspreeRequestsBeforeInvitation": 1,
+    "invitationCreatesLead": false,
+    "deferErasesLead": false,
+    "coverageFitCompletionRemainsSecondIntakePoint": true
+  },
+  "accessibility": {
+    "semanticChoiceGroup": true,
+    "nativeButtons": true,
+    "politeStatusAnnouncements": true,
+    "keyboardOperable": true,
+    "minimumPrimaryTargetCssPixels": 44,
+    "mobileSingleColumn": true,
+    "reducedMotion": true,
+    "forcedColors": true
+  },
+  "unchanged": {
+    "leadForms": true,
+    "requiredConsent": true,
+    "formspreeEndpoint": true,
+    "engagementQuestions": true,
+    "boundedIntentFields": true,
+    "CoverageFitReceiverSource": true,
+    "CoverageFitAssessment": true,
+    "ProtectionScore": true,
+    "lifeApplication": true
+  },
+  "privacy": "Invitation telemetry records only route entry, bounded destination, lead status, and accept/defer/back outcome. It excludes personal information, address, consent content, free-form data, and assessment answers."
+}

@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "build": "408-HOME-2.9",
+  "receiver": "CoverageFit v3.20.60",
+  "routes": ["/home/", "https://coveragefit.com/transition/", "https://coveragefit.com/assessment/"],
+  "viewportMatrix": [
+    { "width": 320, "height": 568, "profile": "narrow phone" },
+    { "width": 360, "height": 800, "profile": "Android phone" },
+    { "width": 390, "height": 844, "profile": "iPhone" },
+    { "width": 412, "height": 915, "profile": "large phone" },
+    { "width": 768, "height": 1024, "profile": "tablet portrait" },
+    { "width": 1024, "height": 768, "profile": "tablet landscape" },
+    { "width": 1440, "height": 900, "profile": "desktop" }
+  ],
+  "accessibility": {
+    "target": "WCAG 2.2 AA-oriented route contract",
+    "skipNavigation": true,
+    "keyboardFocusVisible": true,
+    "progressProgrammatic": true,
+    "validationProgrammatic": true,
+    "primaryTouchTargetMinimumCssPixels": 44,
+    "reducedMotion": true,
+    "forcedColors": true,
+    "mobileInputFontMinimumCssPixels": 16
+  },
+  "performance": {
+    "initialTransferBudgetBytesPerRoute": 500000,
+    "responsiveHero": true,
+    "intrinsicMediaDimensions": true,
+    "orderedDeferredScripts": true,
+    "belowFoldMediaLazy": true
+  },
+  "unchanged": {
+    "engagementQuestions": true,
+    "branchDestinations": true,
+    "leadFields": true,
+    "consent": true,
+    "campaignAttribution": true,
+    "assessmentQuestions": true,
+    "recommendations": true,
+    "protectionScoreFormula": true,
+    "leadPoints": 2
+  },
+  "certificationBoundary": {
+    "localAutomatedCertification": "required",
+    "cleanRoomArchiveCertification": "required",
+    "liveDeploymentSmokeTest": "post-deploy",
+    "physicalDeviceAndAssistiveTechnologyChecks": "post-deploy"
+  }
+}

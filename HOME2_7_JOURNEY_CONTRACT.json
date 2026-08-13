@@ -1,0 +1,12 @@
+{
+  "version": "1.5",
+  "build": "408-HOME-2.7",
+  "contract": "home-review-journey-v1",
+  "route": "/home/",
+  "campaignContract": "HOME2_7_CAMPAIGN_QR_CONTRACT.json",
+  "engagementFields": ["home_review_goal", "housing_context", "review_timing"],
+  "campaignFields": ["campaign", "campaign_id", "campaign_variant", "campaign_zip"],
+  "leadPointsPreserved": 2,
+  "assessmentQuestionsChanged": false,
+  "protectionScoreChanged": false
+}

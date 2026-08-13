@@ -1,0 +1,33 @@
+{
+  "build": "408-HOME-2.2",
+  "route": "/home/",
+  "questionCount": 3,
+  "sequence": [
+    {
+      "step": 1,
+      "field": "home_review_goal",
+      "values": ["farmers_fit", "coverage_fit", "home_auto_bundle", "exploring"]
+    },
+    {
+      "step": 2,
+      "field": "housing_context",
+      "values": ["owner_occupied", "landlord", "buyer", "renter"]
+    },
+    {
+      "step": 3,
+      "field": "review_timing",
+      "values": ["shopping_now", "renewal_60", "later", "not_sure"]
+    }
+  ],
+  "contactCapture": "revealed-after-all-three-valid-answers",
+  "fallback": "complete-lead-form-remains-available-without-javascript",
+  "renterBranch": "/contact/?intent=renters",
+  "receiver": "CoverageFit v3.20.56",
+  "receiverChanged": false,
+  "deferred": [
+    "personalized payoff copy",
+    "lead form simplification",
+    "CoverageFit assessment changes",
+    "Protection Score changes"
+  ]
+}

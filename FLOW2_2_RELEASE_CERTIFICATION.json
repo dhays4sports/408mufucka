@@ -1,0 +1,32 @@
+{
+  "sprint": "408-FLOW-2.2",
+  "certifiedAt": "2026-08-13T18:08:38Z",
+  "senderRuntime": "408-FLOW-2.2",
+  "receiverRuntime": "CoverageFit v3.20.61",
+  "sourceArchives": {
+    "408farmersSha256": "710775b2d818b18a2bb7f02c0f166a71753ba5b119b79dbbdf8846ceedfe684b",
+    "coverageFitSha256": "59151b372a8aa617dc854de14af9642b87814f601bbeefebfd7159b0afa0faef"
+  },
+  "results": {
+    "focusedFormFirst": { "passed": 103, "failed": 0 },
+    "senderJavaScriptSuites": { "passed": 61, "failed": 0 },
+    "senderStaticChecks": { "passed": 294, "failed": 0 },
+    "senderLinks": { "checked": 299, "broken": 0 },
+    "coverageFitQuestionTwoChecks": { "passed": 22, "failed": 0 },
+    "coverageFitRegressionSuites": { "passed": 164, "failed": 0 }
+  },
+  "invariants": {
+    "buyerUnchanged": true,
+    "lifeUnchanged": true,
+    "sharedSubmitControllerUnchanged": true,
+    "coverageFitSourceByteForByteUnchanged": true,
+    "protectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8"
+  },
+  "postDeployChecks": [
+    "verify each affected route renders its lead form before any engagement questions",
+    "submit one test lead from Home, Auto Bundle, and one occupational route",
+    "confirm Formspree receipt and automatic CoverageFit continuation",
+    "confirm CoverageFit questions one through three remain responsive in production",
+    "verify mobile keyboard, focus, scrolling, and consent visibility on physical iOS and Android devices"
+  ]
+}

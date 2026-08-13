@@ -1,0 +1,18 @@
+{
+  "build": "408-HOME-2.4",
+  "route": "/home/",
+  "sequence": "personalized payoff -> contact step -> property and consent step -> lead submission -> destination",
+  "stepCount": 2,
+  "contactFields": ["first_name", "last_name", "phone", "email"],
+  "propertyAndConsentFields": ["property_address", "consent"],
+  "reviewContext": "derived from bounded engagement answers and hidden only in the enhanced journey",
+  "noJavaScriptFallback": "all lead fields and review-context select remain visible and usable",
+  "renter": {
+    "propertyAddressRequired": false,
+    "destination": "/contact/?intent=renters",
+    "coverageFitAssessment": false
+  },
+  "receiver": "CoverageFit v3.20.56",
+  "receiverChanged": false,
+  "nextSprint": "408-HOME-2.5"
+}

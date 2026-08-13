@@ -1,0 +1,1487 @@
+{
+  "total": 296,
+  "passed": 296,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "exists:shared/config.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/coveragefit-launch.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/prospect-profile.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/flyer-campaign.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-journey-contract.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-baseline.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-engagement.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-engagement.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-lead-progressive.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-lead-progressive.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-confirmation.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/home-confirmation.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/buyer-referral.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/buyer-flow.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/buyer.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/contact-choice.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/contact-choice.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/performance.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/progressive-intake.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/progressive-intake.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/accessibility.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/accessibility.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/assets/buyer-home.jpg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/score.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/script.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:score/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:home/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:buyer/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:buyer/thank-you.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:contact/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:neighbor/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:life/index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:life/thank-you.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/life.css",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:shared/life-intake.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:index.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:_redirects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:handoff-manifest.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:performance-budgets.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:promise-journey-contract.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_1_JOURNEY_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_2_JOURNEY_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_2_ENGAGEMENT_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_3_JOURNEY_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_3_PAYOFF_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_4_JOURNEY_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_4_PROGRESSIVE_LEAD_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_5_JOURNEY_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_5_CONFIRMATION_CONTRACT.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:HOME2_1_CONVERSION_BASELINE.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.1.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.2.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.3.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.4.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.5.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.5-runtime.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-home-2.7-deep-route-assets.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/production-handoff-smoke.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-408-ho-1c.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-np-1.5.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-np-1.5-cross-repo.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-buyer-flow.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.2.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.3.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.3-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.4.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.4-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.5.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.5-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6.1.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6.1-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6.2.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-cro-1.6.2-browser.mjs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/test-408-life-1.1.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CONV-1.1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-NP-1.5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-HOME-2.7-QR-ASSET-HOTFIX.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-BUY-1.1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.3.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.4.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.5.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.6.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.6.1.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:SPRINT-408-CRO-1.6.2.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:professional-intent-contract.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:FLYER-CAMPAIGN-IDENTIFIERS.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:PRODUCTION-HANDOFF-CERTIFICATION.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:PRODUCTION-HANDOFF-CERTIFICATION.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "score loads config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "score loads launcher before score behavior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "score has three CTA hooks",
+      "passed": true,
+      "detail": "3"
+    },
+    {
+      "name": "home/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:form launch enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:entry distinct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:config before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:profile builder loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:launcher before profile builder",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:profile builder before script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:production build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:sender build attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:direct assessment continuation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer/index.html:handoff contract attribute",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage keeps one general CoverageFit launch element",
+      "passed": true,
+      "detail": "1"
+    },
+    {
+      "name": "homepage routes home purchases through buyer concierge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage keeps auto bundle local",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage conversation-only business and landlord intents use reliable contact chooser",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "homepage routes life to dedicated campaign page",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact chooser exposes text call and email",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact chooser is not a parallel intake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact chooser has explicit routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "public SMS links avoid an empty query parameter prefix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "telephone links never claim to start a text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "auto-bundle/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "healthcare/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "tech/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "engineers/index.html:explicit direct contact choices",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "canonical CoverageFit URL configured",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "local fallback configured",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address autocomplete module exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home address field is eligible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home loads address module before form script",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module restricts to US",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module requests address predictions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module has California bounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module preserves blank-key manual fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google Places key is configurable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google Places key is configured",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module has three-character threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module adds accessible helper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module tracks query readiness",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module handles selected address",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module uses Places API New",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module avoids legacy Autocomplete widget",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address input is never constrained to two characters",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Places dropdown styled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Places rows are touch friendly",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "short queries suppress predictions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1B sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1C sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1D sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1E sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1F sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1G sprint documentation exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address deployment checklist exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address runtime QA exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_formatted_address",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_street",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_city",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_county",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_zip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_country",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: property_place_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home has structured address field: address_selection_method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module parses address components",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module stores structured address",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module tracks autocomplete method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module preserves manual method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address module clears stale components",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "manual address syncs before submit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "manual address populates canonical formatted field",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "pasted addresses retain manual support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google loader has timeout fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google loader uses explicit ready callback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google authentication failure preserves fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Google key uses strict referrer policy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "address ready integration event exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "any-ZIP flyer campaign engine exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home loads flyer campaign before launcher",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home carries flyer field: campaign_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home carries flyer field: campaign_variant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Home carries flyer field: campaign_zip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher sends campaign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher sends source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher sends entry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher sends assessment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher sends session_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports campaign_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports campaign_variant",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports campaign_zip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports utm_source",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports utm_medium",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports utm_campaign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports utm_term",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports utm_content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports creative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports ref",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports referral",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff uses form campaign",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff sends sender build fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff sends receiver contract fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff sends explicit contact permission",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff sends submission provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "form handoff requests direct assessment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher supports explicit next route",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "launcher maps legacy referral to canonical ref",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home offers non-renewal reason",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "home offers premium-increase reason",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/home.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/transition.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/prefill-intake.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/attribution.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/personalization-context.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.7/transition-route.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.13-conv1.1/prefill-intake.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.13-conv1.1/personalization-context.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exists:qa/fixtures/coveragefit-v3.20.13-conv1.1/conversion-handoff.js",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "obsolete TX-1.1 fixture removed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest identifies current build",
+      "passed": true,
+      "detail": "408-CONV-1.1"
+    },
+    {
+      "name": "handoff manifest identifies receiver contract",
+      "passed": true,
+      "detail": "coveragefit-handoff-v1"
+    },
+    {
+      "name": "manifest identifies NP-1.5 referral receiver",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest identifies current CoverageFit receiver",
+      "passed": true,
+      "detail": "CoverageFit v3.20.62"
+    },
+    {
+      "name": "handoff manifest retains minimum receiver compatibility",
+      "passed": true,
+      "detail": "CoverageFit v3.20.13"
+    },
+    {
+      "name": "handoff manifest preserves CRO-1.2 contact choices after later CRO work",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest preserves CRO-1.3 mobile performance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest preserves CRO-1.4 low-friction intake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest preserves CRO-1.5 accessibility polish",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest identifies CRO-1.6 promise consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "contact choice manifest preserves CoverageFit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest launches assessment after transition",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "handoff manifest lists seven personalized routes",
+      "passed": true,
+      "detail": "7"
+    },
+    {
+      "name": "handoff manifest identifies buyer concierge",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "auto bundle continues to CoverageFit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers route restored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers fallback restored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "teachers campaign asset exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route is text-first",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route uses clean buyer-specific home image",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route offers online intake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route loads buyer context before shared form controller",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route loads address module",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route has partner fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer route has closing context",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "buyer exact redirects exist",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "legacy Home alternate is absent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "legacy Home alternate permanently redirects",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "direct buyer referral pill has an explicit hidden rendering rule",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

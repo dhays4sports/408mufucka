@@ -1,0 +1,48 @@
+{
+  "sprint": "408-HOME-2.9",
+  "releasePair": {
+    "sender": "408-HOME-2.9",
+    "receiver": "CoverageFit v3.20.60"
+  },
+  "localFocusedQa": {
+    "senderChecks": 16,
+    "receiverChecks": 17,
+    "status": "passed"
+  },
+  "historicalRegression": {
+    "senderSuites": 59,
+    "senderSuitesPassed": 59,
+    "receiverSuites": 163,
+    "receiverSuitesPassed": 163,
+    "senderStaticChecks": 294,
+    "senderStaticChecksPassed": 294,
+    "status": "passed"
+  },
+  "initialTransferBytes": {
+    "budgetPerRoute": 500000,
+    "home": 289730,
+    "coverageFitAssessment": 470715,
+    "status": "passed"
+  },
+  "linkCheck": {
+    "checked": 306,
+    "broken": 0
+  },
+  "preserved": [
+    "HOME-2.8 continuity and recovery",
+    "owner, landlord, buyer, and renter branches",
+    "campaign attribution",
+    "contact consent",
+    "one-time property confirmation",
+    "seven-day assessment draft",
+    "two lead points",
+    "assessment questions and recommendations",
+    "Protection Score formula"
+  ],
+  "postDeployEvidenceRequired": [
+    "live route smoke test",
+    "physical iOS Safari and Android Chrome",
+    "VoiceOver and NVDA",
+    "production network and runtime performance trace"
+  ]
+}

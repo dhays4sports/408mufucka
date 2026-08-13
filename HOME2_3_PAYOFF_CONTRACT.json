@@ -1,0 +1,28 @@
+{
+  "build": "408-HOME-2.3",
+  "route": "/home/",
+  "inputDimensions": {
+    "home_review_goal": 4,
+    "housing_context": 4,
+    "review_timing": 4
+  },
+  "possibleCombinations": 64,
+  "rendering": "one approved copy fragment per bounded dimension",
+  "sequence": "three valid answers -> personalized payoff -> lead form",
+  "actions": ["continue_to_details", "change_answers"],
+  "renter": {
+    "payoff": "renters-specific direct conversation disclosed before lead capture",
+    "destination": "/contact/?intent=renters",
+    "homeownerAssessmentStarted": false
+  },
+  "conclusions": {
+    "quote": false,
+    "savings": false,
+    "coverage": false,
+    "eligibility": false,
+    "carrierFit": false
+  },
+  "receiver": "CoverageFit v3.20.56",
+  "receiverChanged": false,
+  "nextSprint": "408-HOME-2.4"
+}

@@ -1,0 +1,31 @@
+{
+  "sprint": "408-LIFE-1.4.1-regression",
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    "LIFE-1.4.1 Cloudflare alignment is preserved by current release",
+    "exists:_worker.js",
+    "exists:_headers",
+    "exists:shared/life-secure-submit.js",
+    "exists:LIFE-SECURE-SUBMISSION-DEPLOYMENT.md",
+    "exists:SPRINT-408-LIFE-1.4.1.md",
+    "Netlify runtime remains removed",
+    "life surfaces carry current LIFE build",
+    "client endpoint remains same-origin and stable",
+    "Cloudflare worker still owns exact LIFE API route",
+    "non-API traffic still falls through to Pages assets",
+    "Cloudflare runtime still uses env bindings not process.env",
+    "Worker still uses native Web Crypto",
+    "static LIFE headers remain Cloudflare-compatible",
+    "API still sets no-store and anti-framing headers",
+    "deployment documentation remains Cloudflare-specific",
+    "server source contains no request-body logging",
+    "server source contains no Formspree CoverageFit email or Slack transport",
+    "public server still limits body size",
+    "public server still validates origin and fetch metadata",
+    "public server still exact-key allowlists payload groups",
+    "public server still validates last4 exactly four digits",
+    "manifest still declares Cloudflare Advanced Mode",
+    "LIFE-1.5 supersedes relay with Cloudflare queue without regressing secure boundary"
+  ]
+}

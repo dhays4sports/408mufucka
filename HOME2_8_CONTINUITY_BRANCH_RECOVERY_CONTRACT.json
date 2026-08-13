@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "build": "408-HOME-2.8",
+  "receiver": "CoverageFit v3.20.59",
+  "preLeadContinuity": {
+    "storage": "sessionStorage",
+    "scope": "current browser tab",
+    "ttlMilliseconds": 21600000,
+    "stored": ["home_review_goal", "housing_context", "review_timing", "journey_stage", "engagement_step", "lead_step", "campaign_id", "campaign_zip", "campaign_variant"],
+    "excluded": ["name", "phone", "email", "property_address", "consent", "free_form_answers"]
+  },
+  "branches": {
+    "owner_occupied": { "destination": "CoverageFit Home assessment", "propertyRequired": true },
+    "landlord": { "destination": "CoverageFit Home assessment", "propertyRequired": true },
+    "buyer": { "destination": "CoverageFit Home assessment", "propertyRequired": true },
+    "renter": { "destination": "/contact/?intent=renters", "propertyRequired": false }
+  },
+  "handoffRecovery": {
+    "availableAfterFirstLeadAttempt": true,
+    "reusesConsentedProspectProfile": true,
+    "automaticallyReplaysLeadSubmission": false,
+    "requiresContactReentry": false,
+    "startOverClearsSavedProspectAndPendingLead": true
+  },
+  "coverageFit": {
+    "trustedBrowserHandoffRecovered": true,
+    "recentRenterMisrouteRecovered": true,
+    "assessmentDraftDays": 7
+  },
+  "leadPointsPreserved": 2,
+  "assessmentQuestionsChanged": false,
+  "recommendationsChanged": false,
+  "protectionScoreChanged": false
+}

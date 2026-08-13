@@ -1,0 +1,97 @@
+{
+  "sprint": "408-FLOW-2.5",
+  "runtime": "408-FLOW-2.5",
+  "receiver": "CoverageFit v3.20.62",
+  "purpose": "Certify the complete conversion journey without redesigning or changing its product behavior.",
+  "ownership": {
+    "408FARMERS": ["acquisition", "lead form", "Formspree lead delivery", "post-lead engagement", "personalized payoff", "optional destination choice", "attribution", "CoverageFit handoff"],
+    "CoverageFit": ["private handoff reception", "URL cleanup", "transition", "assessment", "Protection Score", "completed consultation record", "private Protection Snapshot", "Save as PDF / Print delivery"]
+  },
+  "routes": ["home", "buyer", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "excludedProductFlows": ["life"],
+  "primarySequence": [
+    "form_first_lead_capture",
+    "one_408farmers_lead_request",
+    "lead_receipt",
+    "home_review_goal",
+    "housing_context",
+    "review_timing",
+    "personalized_payoff",
+    "optional_coveragefit_invitation",
+    "explicit_acceptance",
+    "private_handoff_and_url_cleanup",
+    "existing_home_assessment",
+    "protection_score",
+    "completed_consultation_record",
+    "private_home_protection_snapshot",
+    "save_as_pdf_or_print"
+  ],
+  "leadStatuses": ["confirmed", "pending", "unconfirmed", "local-fallback"],
+  "branchMatrix": {
+    "acceptCoverageFit": "Open CoverageFit once and preserve contact, consent, property, intent, and attribution without re-entry.",
+    "finishForNow": "Remain on 408FARMERS; preserve the first lead and create no CoverageFit request.",
+    "renter": "Open renter-specific contact options; never start the homeowner assessment.",
+    "controllerFailure": "Require a fresh explicit optional-continuation click; never restore automatic launch.",
+    "temporaryLeadDeliveryFailure": "Keep the journey available with a truthful pending, unconfirmed, or local-fallback receipt."
+  },
+  "leadContract": {
+    "leadPoints": 2,
+    "first": "408FARMERS form submission before post-lead engagement",
+    "second": "CoverageFit completed assessment consultation submission",
+    "engagementCreatesLead": false,
+    "invitationCreatesLead": false,
+    "reportPrintCreatesLead": false,
+    "deferErasesFirstLead": false
+  },
+  "handoffPrivacy": {
+    "temporaryAllowlistedProfileTransfer": true,
+    "personalAndConsentMarkersRemovedFromVisibleCoverageFitUrl": true,
+    "opaquePrivateReportFragment": true,
+    "identityInAnalytics": false,
+    "assessmentAnswersIn408FARMERSTelemetry": false
+  },
+  "conversionEvidence": [
+    "lead submission attempted and status",
+    "three bounded post-lead answers",
+    "personalized payoff viewed",
+    "invitation viewed and accepted, deferred, or returned",
+    "CoverageFit assessment launch",
+    "assessment started and completed",
+    "completed consultation delivery",
+    "private report opened",
+    "Save as PDF / Print selected"
+  ],
+  "stability": {
+    "questionTwoMutationObservers": 0,
+    "assessmentDraftRecovery": true,
+    "mobileResponsive": true,
+    "keyboardAccessible": true,
+    "reducedMotion": true,
+    "forcedColors": true
+  },
+  "frozen": {
+    "senderRuntimeFiles": ["shared/script.js", "shared/post-lead-engagement.js", "shared/coveragefit-invitation.js", "shared/coveragefit-launch.js", "shared/prospect-profile.js"],
+    "senderRuntimeSha256": {
+      "shared/script.js": "0ac4fe4fc48ed269d711ce56d11439d715e5d7afb5d4964ea0d94c8d5b87660b",
+      "shared/post-lead-engagement.js": "2f63b3aafe7f9112533fc3aba20fe1d7688c2def2027bc516f041d3bc1f90d11",
+      "shared/coveragefit-invitation.js": "e328485e65d1dcc48ee4b1ada845d2975d20eaae07106fcf59e7f20f8c85e454",
+      "shared/coveragefit-launch.js": "239d8ca692c7f392a1152356cf07c7522aebcb35b6ef6c03891eb82110e9e462",
+      "shared/prospect-profile.js": "9b588ad7003ee4e1ce915f5b75a215b7ccc478f262a6c7824bae26a9b08dc7c3"
+    },
+    "receiverRuntime": "CoverageFit v3.20.62",
+    "assessmentQuestions": true,
+    "recommendations": true,
+    "consultationRecord": true,
+    "reportDelivery": true,
+    "protectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8",
+    "homeAssessmentConfigSha256": "f4f39337871c7ce6952b77607470dcef963a039b2e467eaedfe5e35b6348553b"
+  },
+  "certificationBoundary": {
+    "sourceCertified": true,
+    "liveDeploymentPerformed": false,
+    "realFormspreeReceiptVerified": false,
+    "liveCloudflareD1RecordVerified": false,
+    "physicalDevicePdfVerified": false,
+    "productionRunbook": "FLOW2_5_PRODUCTION_CONVERSION_RUNBOOK.md"
+  }
+}

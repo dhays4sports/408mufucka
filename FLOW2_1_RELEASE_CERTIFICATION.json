@@ -1,0 +1,51 @@
+{
+  "sprint": "408-FLOW-2.1",
+  "runtime": "408-FLOW-2.1",
+  "status": "certified_deployable",
+  "certifiedAt": "2026-08-13T17:48:18Z",
+  "scope": [
+    "/healthcare/",
+    "/teachers/",
+    "/tech/",
+    "/engineers/"
+  ],
+  "verification": {
+    "focusedQa": {
+      "suite": "qa/test-flow-2.1.js",
+      "passed": 72,
+      "failed": 0
+    },
+    "historicalJavascriptRegression": {
+      "suites": 60,
+      "passed": 60,
+      "failed": 0,
+      "receiver": "CoverageFit v3.20.60"
+    },
+    "staticQa": {
+      "passed": 294,
+      "failed": 0
+    },
+    "linkQa": {
+      "checked": 306,
+      "broken": 0
+    },
+    "initialRouteTransferBytes": {
+      "healthcare": 168160,
+      "teachers": 169681,
+      "tech": 168139,
+      "engineers": 168203,
+      "budgetPerRoute": 200000
+    },
+    "preservation": {
+      "occupationalFormFragmentsByteIdentical": true,
+      "orderedExternalScriptListsByteIdentical": true,
+      "nonOccupationalRouteFilesByteIdentical": true,
+      "coverageFitReceiverChanged": false
+    }
+  },
+  "postDeployEvidenceRequired": [
+    "live occupational route smoke test",
+    "physical iOS Safari and Android Chrome check",
+    "production form submission and CoverageFit continuation check"
+  ]
+}

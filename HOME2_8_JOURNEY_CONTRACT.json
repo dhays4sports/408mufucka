@@ -1,0 +1,12 @@
+{
+  "version": "1.6",
+  "build": "408-HOME-2.8",
+  "contract": "home-review-journey-v1",
+  "route": "/home/",
+  "continuityContract": "HOME2_8_CONTINUITY_BRANCH_RECOVERY_CONTRACT.json",
+  "engagementFields": ["home_review_goal", "housing_context", "review_timing"],
+  "campaignContract": "HOME2_7_CAMPAIGN_QR_CONTRACT.json",
+  "leadPointsPreserved": 2,
+  "assessmentQuestionsChanged": false,
+  "protectionScoreChanged": false
+}

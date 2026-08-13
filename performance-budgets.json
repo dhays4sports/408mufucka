@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "build": "408-CRO-1.3",
+  "measurement": "encoded file bytes",
+  "notes": "Budgets apply to the responsive WebP candidate selected by a modern browser. Original PNG files remain packaged as compatibility and social-sharing fallbacks and are not fetched when WebP is supported.",
+  "shared": {
+    "headshot160MaxBytes": 6000,
+    "headshot320MaxBytes": 12000,
+    "headshot640MaxBytes": 28000,
+    "carrier320MaxBytes": 10000
+  },
+  "routes": {
+    "/auto-bundle/": {
+      "asset": "auto-bundle",
+      "mobile480MaxBytes": 55000,
+      "desktop800MaxBytes": 105000,
+      "fullMaxBytes": 145000
+    },
+    "/healthcare/": {
+      "asset": "healthcare",
+      "mobile480MaxBytes": 40000,
+      "desktop800MaxBytes": 75000,
+      "fullMaxBytes": 105000
+    },
+    "/teachers/": {
+      "asset": "teachers",
+      "mobile480MaxBytes": 50000,
+      "desktop800MaxBytes": 100000,
+      "fullMaxBytes": 140000
+    },
+    "/tech/": {
+      "asset": "tech",
+      "mobile480MaxBytes": 40000,
+      "desktop800MaxBytes": 70000,
+      "fullMaxBytes": 95000
+    },
+    "/engineers/": {
+      "asset": "engineers",
+      "mobile480MaxBytes": 45000,
+      "desktop800MaxBytes": 85000,
+      "fullMaxBytes": 125000
+    }
+  }
+}
