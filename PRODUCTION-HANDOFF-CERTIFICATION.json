@@ -1,0 +1,13 @@
+{
+  "sprint": "CONV-1.1",
+  "senderBuild": "408-CONV-1.1",
+  "status": "SOURCE-VERIFIED-LIVE-NOT-RECHECKED",
+  "handoffContract": "coveragefit-handoff-v1",
+  "receiver": "CoverageFit v3.20.13",
+  "journey": [
+    "https://408farmers.com/home/",
+    "https://coveragefit.com/transition/",
+    "https://coveragefit.com/assessment/"
+  ],
+  "liveProduction": "not-deployed-or-rechecked-from-this-environment"
+}

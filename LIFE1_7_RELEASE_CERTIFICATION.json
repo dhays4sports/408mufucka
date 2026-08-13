@@ -1,0 +1,45 @@
+{
+  "build": "408-LIFE-1.7",
+  "artifact_status": "CODE-CERTIFIED",
+  "live_cloudflare_status": "REQUIRES_POST_DEPLOY_READINESS_AND_CANARY",
+  "paid_traffic_activation": "conditional",
+  "qa": {
+    "life_1_7_dedicated": {
+      "passed": 35,
+      "failed": 0
+    },
+    "rendered_chromium": {
+      "passed": 19,
+      "failed": 0
+    },
+    "static_repository": {
+      "passed": 265,
+      "failed": 0
+    },
+    "link_verification": {
+      "checked": 286,
+      "broken": 0
+    },
+    "logo_integration": {
+      "passed": 14,
+      "failed": 0
+    },
+    "historical_local_node": {
+      "passed": 38,
+      "unexpected_failed": 0,
+      "note": "excludes dedicated LIFE-1.7 suite"
+    },
+    "coveragefit_dependent_blocked": 9,
+    "live_network_smoke_deferred": 1,
+    "historical_node_playwright_browser_blocked": 6
+  },
+  "activation_requirements": [
+    "Deploy to the existing 408FARMERS Cloudflare Pages project",
+    "Confirm /life-ops/ Production readiness reports ready",
+    "Verify Creative A-D message matching in production",
+    "Complete one appropriate canary application start",
+    "Confirm the canary appears in the encrypted producer queue",
+    "Confirm application_start_submitted increments in the first-party funnel",
+    "Activate paid traffic only after all checks pass"
+  ]
+}

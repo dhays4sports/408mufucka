@@ -1,0 +1,47 @@
+{
+  "sprint": "408-FLOW-2.3",
+  "status": "certified_deployable",
+  "certifiedAt": "2026-08-13T18:26:53Z",
+  "senderRuntime": "408-FLOW-2.3",
+  "receiverRuntime": "CoverageFit v3.20.61",
+  "sourceArchives": {
+    "408farmersSha256": "34377e9da12b054dcd36190170f2fe1f7aa3753426f442103c6be408a343253c",
+    "coverageFitSha256": "59151b372a8aa617dc854de14af9642b87814f601bbeefebfd7159b0afa0faef"
+  },
+  "verification": {
+    "focusedContract": { "suite": "qa/test-flow-2.3.js", "passed": 63, "failed": 0 },
+    "submitRuntime": { "suite": "qa/test-flow-2.3-runtime.js", "scenarios": 4, "passed": 4, "failed": 0 },
+    "domInteractionSmoke": { "environment": "jsdom 26.1.0", "passed": 18, "failed": 0 },
+    "senderStatic": { "suite": "qa/test-static.py", "passed": 294, "failed": 0 },
+    "senderLinks": { "suite": "qa/check-links.py", "checked": 313, "broken": 0 },
+    "coverageFitQuestionTwo": { "suite": "ASMT1_9_QA.mjs", "passed": 22, "failed": 0 },
+    "coverageFitRegression": { "suite": "RUN_REGRESSION_SUITE.js", "passed": 164, "failed": 0 }
+  },
+  "invariants": {
+    "leadFormFirst": true,
+    "questionsAfterLeadAttempt": true,
+    "automaticCoverageFitLaunch": false,
+    "engagementSecondLeadRequest": false,
+    "renterHomeAssessmentBlocked": true,
+    "lifeApplicationChanged": false,
+    "coverageFitSourceTreeChanged": false,
+    "coverageFitSourceTreeSha256": "7c3a394e7e1c420c2ab8e0762d9c00037bf078906de8f60989e9d1fc33e0a09f",
+    "protectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8"
+  },
+  "postDeployChecks": [
+    "publish the 408FARMERS archive contents to the repository connected to 408farmers.com",
+    "publish the synchronized CoverageFit archive only if the connected repository is not already at v3.20.61",
+    "submit one controlled lead from Home, Buyer, Auto Bundle, and one occupational route",
+    "confirm the post-lead questions appear only after Formspree reaches confirmed or safe-pending receipt state",
+    "verify Not now creates no second request and does not launch CoverageFit",
+    "verify Get My Protection Score opens CoverageFit with the three bounded context values",
+    "verify renter context opens renter contact options without entering the Home assessment",
+    "complete CoverageFit questions one through three on production Chrome and a physical iOS or Android device"
+  ],
+  "limitations": {
+    "deployed": false,
+    "liveFormspreeReceiptVerified": false,
+    "physicalDeviceVerified": false,
+    "note": "Certification covers source, VM runtime, DOM interaction, static, link, and receiver regression checks. Cloudflare deployment, live Formspree delivery, and physical-device evidence remain deployment-stage checks."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "logo_size": [
+    1014,
+    215
+  ],
+  "icon_size": [
+    185,
+    211
+  ],
+  "modified_assets": [
+    "shared/assets/408-farmers-logo.png",
+    "shared/assets/408-farmers-logo-white.png",
+    "shared/assets/408-farmers-icon.png",
+    "favicon.ico",
+    "favicon-32x32.png",
+    "apple-touch-icon.png"
+  ]
+}

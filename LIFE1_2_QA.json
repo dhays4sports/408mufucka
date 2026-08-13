@@ -1,0 +1,43 @@
+{
+  "sprint": "408-LIFE-1.2",
+  "status": "pass",
+  "dedicated_contract": {
+    "passed": 39,
+    "failed": 0
+  },
+  "static_repository": {
+    "passed": 265,
+    "failed": 0
+  },
+  "local_links": {
+    "checked": 273,
+    "broken": 0
+  },
+  "logo_integration": {
+    "passed": 14,
+    "failed": 0
+  },
+  "historical_local_node_regression": {
+    "ran": 39,
+    "passed": 32,
+    "blocked_external_prerequisite": 7,
+    "unexpected_failures": 0,
+    "blocked_reason": "Seven historical tests require the separate paired CoverageFit source tree, which is not included in this isolated 408FARMERS deployable. Each failure stops only on the missing paired receiver prerequisite."
+  },
+  "syntax_and_markup": {
+    "life_intake_javascript_syntax_errors": 0,
+    "life_css_parse_errors": 0,
+    "life_page_duplicate_ids": 0,
+    "life_page_inputs": 17,
+    "life_page_labels": 17,
+    "life_page_fieldsets": 3
+  },
+  "security_boundary": {
+    "network_submission_enabled": false,
+    "persistent_answer_storage_enabled": false,
+    "sensitive_collection_enabled": false,
+    "coveragefit_life_handoff_enabled": false,
+    "paid_traffic_ready": false
+  },
+  "next_sprint": "408-LIFE-1.3"
+}

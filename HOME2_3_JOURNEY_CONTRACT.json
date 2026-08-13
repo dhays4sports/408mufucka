@@ -1,0 +1,76 @@
+{
+  "version": "1.2",
+  "build": "408-HOME-2.3",
+  "contract": "home-review-journey-v1",
+  "route": "/home/",
+  "stages": [
+    "landing",
+    "engagement",
+    "personalized_payoff",
+    "lead_capture",
+    "confirmation",
+    "coveragefit_handoff",
+    "assessment",
+    "completion"
+  ],
+  "events": [
+    "home_journey_viewed",
+    "home_primary_cta_selected",
+    "home_engagement_started",
+    "home_engagement_step_viewed",
+    "home_engagement_step_completed",
+    "home_engagement_completed",
+    "home_personalized_payoff_viewed",
+    "home_personalized_payoff_continued",
+    "home_personalized_payoff_edit_selected",
+    "home_lead_form_started",
+    "home_lead_submission_attempted",
+    "home_lead_submission_confirmed",
+    "home_lead_submission_pending",
+    "home_lead_submission_unconfirmed",
+    "home_coveragefit_launched",
+    "home_assessment_started",
+    "home_assessment_completed"
+  ],
+  "semanticFields": {
+    "home_review_goal": ["farmers_fit", "coverage_fit", "home_auto_bundle", "exploring"],
+    "housing_context": ["owner_occupied", "landlord", "buyer", "renter"],
+    "review_timing": ["shopping_now", "renewal_60", "later", "not_sure"]
+  },
+  "reviewContextPrecedence": [
+    "housing_context=buyer -> Buying a home",
+    "housing_context=renter -> Need a new policy",
+    "housing_context=landlord -> Comparing coverage",
+    "review_timing=renewal_60 -> Current policy renewal",
+    "home_review_goal=home_auto_bundle -> Home and auto together",
+    "review_timing=shopping_now -> Comparing coverage",
+    "home_review_goal=farmers_fit|coverage_fit -> Comparing coverage",
+    "home_review_goal=exploring -> Other",
+    "otherwise preserve the existing review_context"
+  ],
+  "payoff": {
+    "dimensions": ["home_review_goal", "housing_context", "review_timing"],
+    "possibleCombinations": 64,
+    "copyMode": "bounded-compositional",
+    "editAnswersEnabled": true,
+    "leadCaptureAfterPayoff": true
+  },
+  "privacy": {
+    "eventData": "Only allowlisted journey, campaign, route, status, step, and bounded semantic fields.",
+    "excluded": ["name", "email", "phone", "property address", "free-form answers"],
+    "visibleUrl": "The existing CoverageFit prefill scrub remains required."
+  },
+  "leadPoints": [
+    "408FARMERS lead submission",
+    "CoverageFit completed assessment submission"
+  ],
+  "scope": {
+    "userVisibleJourneyChanged": true,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "buyerChanged": false,
+    "occupationalFlowsChanged": false,
+    "lifeChanged": false,
+    "rcSmsChanged": false
+  }
+}

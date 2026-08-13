@@ -1,0 +1,26 @@
+{
+  "sprint": "408-LIFE-1.7-browser",
+  "passed": 19,
+  "failed": 0,
+  "checks": [
+    "Default rendered hero is Creative A",
+    "Default creative code is A",
+    "LIFE has no mobile horizontal overflow",
+    "LIFE rendered runtime has no exception",
+    "Journey emits landing_view",
+    "Journey emits start_clicked",
+    "Journey emits quick_questions_complete",
+    "Journey emits application_details_started",
+    "Journey emits application_start_submitted",
+    "Conversion events are deduplicated in browser",
+    "Conversion payloads contain no applicant identity or answers",
+    "Conversion payloads contain only expected top-level keys",
+    "Application payload reaches secure endpoint",
+    "LIFE journey creates no local/session storage",
+    "LIFE network calls stay on dedicated API paths",
+    "Producer readiness renders ready state",
+    "Producer funnel renders submission count",
+    "Producer funnel renders conversion rate",
+    "Producer workspace has no mobile overflow"
+  ]
+}

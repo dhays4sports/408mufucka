@@ -1,0 +1,986 @@
+{
+  "schemaVersion": "1.1",
+  "runtime": "408-FLOW-2.5",
+  "build": "408-CONV-1.1",
+  "handoffContract": "coveragefit-handoff-v1",
+  "sender": "408farmers",
+  "receiver": "CoverageFit v3.20.62",
+  "minimumCompatibleReceiver": "CoverageFit v3.20.13",
+  "formspree": {
+    "host": "formspree.io",
+    "path": "/f/mojgnegn"
+  },
+  "coverageFit": {
+    "home": "https://coveragefit.com/home/",
+    "transition": "https://coveragefit.com/transition/",
+    "launch": "https://coveragefit.com/transition/?next=%2Fassessment%2F",
+    "assessment": "https://coveragefit.com/assessment/",
+    "zeroRepeat": true
+  },
+  "contactChoices": {
+    "build": "408-CRO-1.2",
+    "path": "https://408farmers.com/contact/",
+    "supportedMethods": [
+      "sms",
+      "tel",
+      "email"
+    ],
+    "supportedIntents": [
+      "general",
+      "business",
+      "landlord",
+      "life",
+      "renters"
+    ],
+    "smsUriFormat": "sms:+14083276377?body={encoded-message}",
+    "fallback": "Every conversation-only entry presents visible call and email alternatives when device messaging is unavailable.",
+    "privacy": "Only an allowlisted intent appears in the public URL. No prospect identity or contact data is collected or added to the URL.",
+    "coverageFitChanged": false
+  },
+  "mobilePerformance": {
+    "build": "408-CRO-1.3",
+    "campaignRoutes": [
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "heroFormat": "image/webp",
+    "heroWidths": [
+      480,
+      800,
+      1024
+    ],
+    "responsiveSelection": "srcset-and-sizes",
+    "fallbackFormat": "image/png",
+    "headshotWidths": [
+      160,
+      320,
+      640
+    ],
+    "belowFoldMedia": "lazy",
+    "performanceBudgets": "performance-budgets.json",
+    "coverageFitChanged": false
+  },
+  "occupationalVisualSimplification": {
+    "build": "408-FLOW-2.1",
+    "routes": [
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "renderedHeroImages": false,
+    "socialShareImagesRetained": true,
+    "formMarkupChanged": false,
+    "formRuntimeChanged": false,
+    "attributionChanged": false,
+    "coverageFitHandoffChanged": false,
+    "receiver": "CoverageFit v3.20.62",
+    "contract": "FLOW2_1_OCCUPATIONAL_VISUAL_CONTRACT.json"
+  },
+  "universalFormFirstRestoration": {
+    "build": "408-FLOW-2.2",
+    "contract": "FLOW2_2_UNIVERSAL_FORM_FIRST_CONTRACT.json",
+    "formFirstRoutes": [
+      "/home/",
+      "/buyer/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "restoredRoutes": [
+      "/home/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "alreadyFormFirstRoutes": [
+      "/buyer/"
+    ],
+    "preFormMarketingQuestions": false,
+    "leadFieldsRemoved": false,
+    "consentChanged": false,
+    "attributionChanged": false,
+    "formspreeChanged": false,
+    "coverageFitHandoffChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "lifeApplicationChanged": false,
+    "receiver": "CoverageFit v3.20.62"
+  },
+  "postLeadEngagementPayoff": {
+    "build": "408-FLOW-2.3",
+    "contract": "FLOW2_3_POST_LEAD_ENGAGEMENT_CONTRACT.json",
+    "routes": [
+      "/home/",
+      "/buyer/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "sequence": "lead form -> confirmed-or-safe-pending receipt -> three bounded engagement questions -> personalized payoff -> optional CoverageFit continuation",
+    "semanticFields": ["home_review_goal", "housing_context", "review_timing"],
+    "leadSubmissionCountBeforeCoverageFit": 1,
+    "secondLeadCreatedByEngagement": false,
+    "coverageFitContinuationAutomatic": false,
+    "coverageFitContinuationRequiresProspectChoice": true,
+    "renterBranch": "/contact/?intent=renters",
+    "deferOutcome": "captured lead remains available for producer follow-up",
+    "lifeApplicationChanged": false,
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Engagement telemetry contains only bounded answers, route entry, lead status, step metadata, and destination type; identity, contact, consent, and property address are excluded."
+  },
+  "optionalCoverageFitInvitation": {
+    "build": "408-CF-RPT-1.1",
+    "contract": "FLOW2_4_OPTIONAL_COVERAGEFIT_INVITATION_CONTRACT.json",
+    "routes": [
+      "/home/",
+      "/buyer/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "stage": "after_post_lead_personalized_payoff",
+    "coverageFitAutomatic": false,
+    "coverageFitTimer": false,
+    "coverageFitRequiresExplicitAcceptance": true,
+    "acceptChoice": "Continue to CoverageFit",
+    "deferChoice": "Finish for Now",
+    "acceptedPromise": "complete the educational assessment to receive a Protection Score and a free Home Protection Snapshot that can be saved as PDF or printed",
+    "deferredOutcome": "the first lead remains submitted for Dylan follow-up",
+    "assetFailureBehavior": "never auto-launch; retain the lead and require a fresh explicit optional-continuation click",
+    "renterBehavior": "offer renter-specific contact options instead of the homeowner assessment",
+    "leadPointsPreserved": 2,
+    "lifeApplicationChanged": false,
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Invitation events contain route entry, lead status, bounded destination type, and the selected invitation outcome; identity, contact, consent, address, and assessment answers are excluded."
+  },
+  "endToEndConversionCertification": {
+    "build": "408-FLOW-2.5",
+    "contract": "FLOW2_5_END_TO_END_CONVERSION_CONTRACT.json",
+    "receiver": "CoverageFit v3.20.62",
+    "routes": [
+      "/home/",
+      "/buyer/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "certifiedJourney": "form-first lead -> three post-lead questions -> personalized payoff -> explicit CoverageFit invitation -> private handoff -> existing assessment -> Protection Score -> completed consultation record -> saveable Home Protection Snapshot",
+    "leadStatuses": ["confirmed", "pending", "unconfirmed", "local-fallback"],
+    "coverageFitAcceptRequired": true,
+    "coverageFitAutomatic": false,
+    "deferPreservesFirstLead": true,
+    "renterSkipsHomeAssessment": true,
+    "leadPoints": 2,
+    "visibleHandoffPiiScrubbedByReceiver": true,
+    "questionTwoStable": true,
+    "saveableReportDelivered": true,
+    "liveProductionCertification": false,
+    "liveProductionGate": "publish the paired repositories and complete the controlled production runbook",
+    "runtimeCodeChanged": false,
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false
+  },
+  "routes": [
+    {
+      "path": "/home/",
+      "entry": "home_lander_form",
+      "launchSurface": "home_lander"
+    },
+    {
+      "path": "/buyer/",
+      "entry": "buyer_lander_form",
+      "launchSurface": "buyer_lander"
+    },
+    {
+      "path": "/tech/",
+      "entry": "tech_eligibility_form",
+      "launchSurface": "occupation_tech"
+    },
+    {
+      "path": "/engineers/",
+      "entry": "engineers_eligibility_form",
+      "launchSurface": "occupation_engineer"
+    },
+    {
+      "path": "/healthcare/",
+      "entry": "healthcare_eligibility_form",
+      "launchSurface": "occupation_healthcare"
+    },
+    {
+      "path": "/teachers/",
+      "entry": "teachers_eligibility_form",
+      "launchSurface": "occupation_education"
+    },
+    {
+      "path": "/auto-bundle/",
+      "entry": "auto_bundle_form",
+      "launchSurface": "auto_bundle"
+    }
+  ],
+  "receiverRelease": "CoverageFit_v3.20.61_CFASMT1.9_Question_Two_Runtime_Stabilization_Deployable",
+  "handoff": {
+    "version": "1.1",
+    "contract": "coveragefit-handoff-v1",
+    "next": "/assessment/",
+    "contactConsent": "explicit-required-checkbox",
+    "consentVersion": "408farmers-contact-v1",
+    "privacy": "CoverageFit removes personal and handoff-control parameters from the visible URL after storage."
+  },
+  "confirmedAssessmentHandoff": {
+    "build": "408-FLOW-1.5",
+    "receiver": "CoverageFit v3.20.55",
+    "routes": [
+      "/home/",
+      "/buyer/",
+      "/auto-bundle/ homeowners branch",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "sequence": "successful lead handoff -> structured property confirmation -> existing Home assessment",
+    "manualAddressFallback": "editable CoverageFit property confirmation",
+    "excluded": [
+      "auto-bundle renters branch",
+      "life",
+      "business",
+      "contact-only",
+      "exploratory no-address launch surfaces"
+    ],
+    "leadPointsPreserved": 2,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false
+  },
+  "homeJourneyFoundation": {
+    "build": "408-HOME-2.9",
+    "route": "/home/",
+    "contract": "home-review-journey-v1",
+    "contractFile": "HOME2_9_MOBILE_ACCESSIBILITY_PERFORMANCE_CONTRACT.json",
+    "baselineFile": "HOME2_1_CONVERSION_BASELINE.md",
+    "semanticFields": [
+      "home_review_goal",
+      "housing_context",
+      "review_timing"
+    ],
+    "baselineEvents": [
+      "home_journey_viewed",
+      "home_primary_cta_selected",
+      "home_engagement_started",
+      "home_engagement_step_viewed",
+      "home_engagement_step_completed",
+      "home_engagement_completed",
+      "home_personalized_payoff_viewed",
+      "home_personalized_payoff_continued",
+      "home_personalized_payoff_edit_selected",
+      "home_lead_capture_presented",
+      "home_lead_capture_step_viewed",
+      "home_lead_capture_step_completed",
+      "home_lead_capture_back_selected",
+      "home_lead_form_started",
+      "home_lead_submission_attempted",
+      "home_lead_submission_confirmed",
+      "home_lead_submission_pending",
+      "home_lead_submission_unconfirmed",
+      "home_confirmation_viewed",
+      "home_confirmation_continued",
+      "home_coveragefit_launched",
+      "home_assessment_started",
+      "home_assessment_completed",
+      "home_campaign_matched",
+      "home_qr_route_resolved",
+      "home_journey_resumed",
+      "home_journey_restarted",
+      "home_journey_expired",
+      "home_branch_resolved",
+      "home_handoff_recovery_viewed",
+      "home_handoff_recovery_continued"
+    ],
+    "receiver": "CoverageFit v3.20.62",
+    "privacy": "Journey analytics exclude name, email, phone, property address, and free-form answers.",
+    "userVisibleJourneyChanged": true,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "nextSprint": null
+  },
+  "homeEngagementExperience": {
+    "build": "408-HOME-2.2",
+    "route": "/home/",
+    "questionCount": 3,
+    "mode": "one-question-per-screen",
+    "semanticFields": [
+      "home_review_goal",
+      "housing_context",
+      "review_timing"
+    ],
+    "contactCaptureTiming": "after-all-three-answers",
+    "navigation": [
+      "continue",
+      "back"
+    ],
+    "noJavaScriptFallback": "existing-complete-lead-form",
+    "renterBranch": "/contact/?intent=renters",
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Telemetry includes only bounded semantic choices and step metadata; identity and address remain excluded."
+  },
+  "homePersonalizedPayoff": {
+    "build": "408-HOME-2.3",
+    "route": "/home/",
+    "stage": "personalized_payoff",
+    "dimensions": [
+      "home_review_goal",
+      "housing_context",
+      "review_timing"
+    ],
+    "possibleCombinations": 64,
+    "presentation": "bounded-compositional-copy",
+    "leadCaptureTiming": "after-payoff-continue",
+    "editAnswersEnabled": true,
+    "renterOutcomeExplained": true,
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "prohibitedConclusions": [
+      "instant quote",
+      "savings promise",
+      "coverage determination",
+      "discount eligibility decision",
+      "carrier fit decision"
+    ],
+    "privacy": "Payoff rendering and telemetry use only the three bounded semantic answers; identity, contact, address, and free-form data remain excluded."
+  },
+  "homeProgressiveLeadCapture": {
+    "build": "408-HOME-2.4",
+    "route": "/home/",
+    "stepCount": 2,
+    "steps": [
+      {
+        "step": 1,
+        "purpose": "contact",
+        "fields": ["first_name", "last_name", "phone", "email"]
+      },
+      {
+        "step": 2,
+        "purpose": "property-and-consent",
+        "fields": ["property_address", "consent"]
+      }
+    ],
+    "derivedFields": ["review_context"],
+    "noJavaScriptFallback": "complete-form-with-review-context-select",
+    "renter": {
+      "propertyAddressRequested": false,
+      "reviewContext": "Need a new policy",
+      "destination": "/contact/?intent=renters"
+    },
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Step telemetry contains only step metadata and bounded housing context; identity and address are excluded."
+  },
+  "homeConfirmationContinuation": {
+    "build": "408-HOME-2.5",
+    "route": "/home/",
+    "leadStatuses": ["confirmed", "pending", "unconfirmed", "local-fallback"],
+    "automaticDelayMilliseconds": 1250,
+    "manualContinueAvailable": true,
+    "homeownerSequence": "visible lead receipt -> CoverageFit transition -> one-time property confirmation -> existing Home assessment",
+    "renterSequence": "visible lead receipt -> /contact/?intent=renters",
+    "missingControllerFallback": "existing immediate destination handoff",
+    "formspreeGraceMilliseconds": 900,
+    "leadPointsPreserved": 2,
+    "receiver": "CoverageFit v3.20.62",
+    "coverageFitChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Confirmation telemetry contains only bounded lead status, destination type, and continuation trigger."
+  },
+  "homeIntentReception": {
+    "build": "408-HOME-2.6",
+    "receiver": "CoverageFit v3.20.62",
+    "contract": "HOME2_6_SENDER_CONTRACT.json",
+    "semanticFields": ["home_review_goal", "housing_context", "review_timing"],
+    "openingPersonalized": true,
+    "propertyConfirmedOnce": true,
+    "contactAndConsentPreserved": true,
+    "completedConsultationRecordIncludesIntent": true,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Personal, consent, handoff-control, and Home intent parameters are removed from the visible CoverageFit URL immediately after intake."
+  },
+  "homeCampaignMatching": {
+    "build": "408-HOME-2.7",
+    "receiver": "CoverageFit v3.20.62",
+    "contract": "HOME2_7_CAMPAIGN_QR_CONTRACT.json",
+    "routePattern": "/home/qr/{ZIP}/{rate|fit}/",
+    "compatibleQueryRouting": true,
+    "variants": {
+      "rate": "competitive-rate review",
+      "fit": "Farmers-fit review"
+    },
+    "canonicalCampaignPattern": "home_flyer_{ZIP}_{rate|fit}",
+    "sameJourney": "/home/",
+    "engagementQuestionsChanged": false,
+    "leadCaptureChanged": false,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Routes and telemetry contain only a five-digit ZIP, bounded creative variant, canonical campaign identifier, and route type; malformed routes fall back to the generic Home experience."
+  },
+  "homeContinuityBranchingRecovery": {
+    "build": "408-HOME-2.8",
+    "receiver": "CoverageFit v3.20.62",
+    "contract": "HOME2_8_CONTINUITY_BRANCH_RECOVERY_CONTRACT.json",
+    "preLeadCheckpoint": {
+      "storage": "tab-scoped sessionStorage",
+      "ttlHours": 6,
+      "fields": ["home_review_goal", "housing_context", "review_timing", "stage", "step", "bounded_campaign_context"],
+      "personalDataStored": false
+    },
+    "branches": {
+      "owner_occupied": "CoverageFit Home assessment",
+      "landlord": "CoverageFit Home assessment with landlord context",
+      "buyer": "CoverageFit Home assessment with buyer context",
+      "renter": "408FARMERS renters contact options"
+    },
+    "handoffRecovery": "After the first lead attempt, back or refresh can continue the saved destination without resubmitting Formspree or re-entering details.",
+    "assessmentDraftRecovery": "Existing CoverageFit seven-day device draft",
+    "leadPointsPreserved": 2,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "privacy": "Pre-lead continuity excludes identity, contact, property address, consent, and free-form data. Recovery URLs contain only bounded route intent."
+  },
+  "homeMobileAccessibilityPerformance": {
+    "build": "408-HOME-2.9",
+    "receiver": "CoverageFit v3.20.62",
+    "contract": "HOME2_9_MOBILE_ACCESSIBILITY_PERFORMANCE_CONTRACT.json",
+    "routes": ["/home/", "CoverageFit /transition/", "CoverageFit /assessment/"],
+    "viewportFloorCssPixels": 320,
+    "viewportCeilingCertifiedCssPixels": 1440,
+    "shortLandscapeCovered": true,
+    "safeAreaCovered": true,
+    "primaryTouchTargetMinimumCssPixels": 44,
+    "mobileInputFontMinimumCssPixels": 16,
+    "reducedMotion": true,
+    "forcedColors": true,
+    "initialTransferBudgetBytesPerRoute": 500000,
+    "orderedDeferredScripts": true,
+    "responsiveHomeHero": true,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false,
+    "leadPointsPreserved": 2,
+    "certificationBoundary": "Local and clean-room automation included; live deployment and physical assistive-technology checks remain post-deploy evidence."
+  },
+  "referralBridge": {
+    "build": "408-NP-1.5",
+    "receiver": "CoverageFit v3.20.18",
+    "generic": "https://408farmers.com/neighbor/",
+    "uniquePattern": "https://408farmers.com/neighbor/r/{anonymous-token}",
+    "destination": "https://coveragefit.com/home/?ref=neighbor",
+    "navigation": "location.replace",
+    "privacy": "The public path contains only a random anonymous token and optional bounded share attribution.",
+    "attribution": {
+      "events": [
+        "neighbor_share_view",
+        "neighbor_share_click",
+        "neighbor_referral_visit",
+        "neighbor_referral_start",
+        "neighbor_referral_complete"
+      ],
+      "campaignFamily": "home_flyer",
+      "campaignIdPattern": "home_flyer_{ZIP}_{rate|fit}",
+      "campaignZip": "any-five-digit-ZIP",
+      "variantA": "rate",
+      "variantB": "fit"
+    }
+  },
+  "buyer": {
+    "build": "408-BUY-1.2",
+    "path": "https://408farmers.com/buyer/",
+    "primaryEntry": "sms:+14083276377",
+    "onlineEntry": "buyer_lander_form",
+    "launchSurface": "buyer_lander",
+    "next": "/assessment/",
+    "partnerAttribution": {
+      "queryFields": [
+        "partner_id",
+        "partner_name",
+        "partner_code"
+      ],
+      "campaignPattern": "buyer_partner_{partner_id}_web",
+      "genericCampaign": "buyer_direct_web",
+      "privacy": "Partner IDs are normalized slugs. Partner names are displayed with textContent. Text-first partner codes are short public attribution identifiers and are not placed in CoverageFit handoff URLs."
+    },
+    "buyerContext": [
+      "closing_date",
+      "occupancy",
+      "closing_urgency",
+      "partner_id",
+      "referral_source"
+    ]
+  },
+  "smsSimulator": {
+    "build": "RC-SMS-1.9.1",
+    "receiver": "CoverageFit v3.20.55",
+    "path": "https://coveragefit.com/agent/sms-simulator/",
+    "liveWebhook": "https://coveragefit.com/api/sms/ringcentral/webhook",
+    "liveConnectionImplemented": true,
+    "liveSms": false,
+    "implementationStatus": "implemented_not_live_verified",
+    "numberPorted": false,
+    "productionCertification": "deferred_until_408_farmers_number_port",
+    "nextProductionSprint": "RC-SMS-1.10",
+    "ringCentralRequiredForLive": true,
+    "publicRuntimeChanged": false,
+    "buyerRoutePreserved": "https://408farmers.com/buyer/",
+    "privacy": "RingCentral credentials, live conversation state, producer summaries, phone numbers, and operator controls remain in the protected CoverageFit backend. The public 408FARMERS site contains no carrier credentials or producer access keys.",
+    "intentRouter": true,
+    "supportedIntents": [
+      "buyer",
+      "home_review",
+      "bundle",
+      "other"
+    ],
+    "supportedCommands": [
+      "STOP",
+      "START",
+      "RESTART",
+      "HELP",
+      "DYLAN",
+      "AGENT",
+      "RUSH"
+    ],
+    "invalidResponsePolicy": "One helpful retry, then awaiting_producer.",
+    "homebuyerIntake": true,
+    "buyerFields": [
+      "property_address",
+      "closing_date",
+      "occupancy",
+      "auto_review",
+      "priority"
+    ],
+    "rushPolicy": "Operational priority modifier across supported guided paths; no coverage, eligibility, savings, or turnaround guarantee.",
+    "coverageFitContinuation": "Implemented in RC-SMS-1.5",
+    "continuationPath": "https://coveragefit.com/sms/continue/?token={opaque-token}",
+    "continuationTtlHours": 24,
+    "continuationPrivacy": "The public continuation URL contains only a random opaque token. Property address, closing date, occupancy, auto-review interest, phone number, and internal conversation identifiers are not included in the URL.",
+    "partnerAttribution": {
+      "textFirst": "Prefilled SMS may include Ref: {partner_code}",
+      "websiteFirst": "https://408farmers.com/buyer/?partner_id={partner_id}&partner_name={partner_name}&partner_code={partner_code}",
+      "registry": "CoverageFit server-side RCSMS_PARTNER_REGISTRY_JSON",
+      "normalization": "Text-first and website-first use the same canonical partner_id.",
+      "privacy": "Partner identity is stored server-side and carried through the opaque handoff record; it is not exposed in the public continuation URL."
+    },
+    "producerHandoff": {
+      "queueState": "awaiting_producer",
+      "summary": "Buyer contact, partner, property, closing, occupancy, auto-review, priority, and CoverageFit link status are available only through protected CoverageFit tooling.",
+      "manualTakeover": "A genuine outbound RingCentral reply from Dylan changes the live conversation to human_takeover. Known automation/operator message IDs are ignored as outbound webhook echoes.",
+      "operatorApi": "https://coveragefit.com/api/sms/producer",
+      "controls": [
+        "pause",
+        "resume",
+        "resend_handoff",
+        "complete",
+        "not_proceeding"
+      ]
+    },
+    "homeownerReviewIntake": {
+      "enabled": true,
+      "fields": [
+        "property_address",
+        "review_reason"
+      ],
+      "handoff": "existing secure CoverageFit continuation"
+    },
+    "bundleIntake": {
+      "enabled": true,
+      "fields": [
+        "property_address",
+        "occupancy",
+        "current_policy_status"
+      ],
+      "handoff": "existing secure CoverageFit continuation"
+    },
+    "specialRouting": {
+      "categories": [
+        "servicing",
+        "landlord",
+        "business",
+        "life",
+        "special"
+      ],
+      "destination": "awaiting_producer",
+      "coverageFitHandoff": false
+    },
+    "operationsDashboard": {
+      "path": "https://coveragefit.com/agent/sms-operations/",
+      "protected": true,
+      "statuses": [
+        "new",
+        "active",
+        "awaiting_dylan",
+        "human_takeover",
+        "link_delivered",
+        "coveragefit_started",
+        "coveragefit_completed",
+        "completed",
+        "opted_out",
+        "failed",
+        "stale"
+      ],
+      "reliability": [
+        "retry_queue",
+        "webhook_health",
+        "stale_detection",
+        "retention_cleanup",
+        "redacted_audit",
+        "campaign_reporting"
+      ],
+      "privacy": "Operational dashboard and retry data remain protected inside CoverageFit; no RingCentral credentials, buyer PII, or internal conversation identifiers are added to 408FARMERS public URLs."
+    },
+    "producerQueueAlerts": {
+      "build": "RC-SMS-1.9.1",
+      "channel": "email",
+      "provider": "Resend",
+      "actionableEvents": [
+        "intake_complete",
+        "personal_response_requested",
+        "direct_handling_required",
+        "automation_escalated"
+      ],
+      "rushSubjectPrefix": "[RUSH]",
+      "idempotent": true,
+      "webhookBlocking": false,
+      "protectedTestAction": true,
+      "publicRuntimeChanged": false,
+      "numberPorted": false,
+      "privacy": "Email contains only action status, broad intent, priority, generic attribution, and an opaque protected-dashboard link. It excludes prospect identity, phone, address, closing date, transcript, partner identity, and insurance details."
+    }
+  },
+  "flowNormalization": {
+    "build": "408-FLOW-1.4",
+    "autoBundle": {
+      "status": "coveragefit-continuation",
+      "entry": "auto_bundle_form",
+      "launchSurface": "auto_bundle",
+      "assessment": "home",
+      "next": "/assessment/",
+      "zeroRepeat": true,
+      "ownerContinuation": "CoverageFit Home assessment",
+      "renterContinuation": "408FARMERS direct contact choice",
+      "renterHomeAssessmentBlocked": true
+    },
+    "directStart": {
+      "status": "enabled",
+      "homepageHero": {
+        "entry": "homepage_hero",
+        "next": "/assessment/"
+      },
+      "homeProtectionScore": {
+        "entry": "score",
+        "next": "/assessment/"
+      },
+      "rule": "Explicit Start My Coverage Review actions continue through the existing CoverageFit transition directly to the existing Home assessment."
+    },
+    "semanticContext": {
+      "reviewContextParam": "review_context",
+      "occupationParam": "occupation_segment",
+      "housingContextParam": "housing_context",
+      "legacyFallback": "segment",
+      "receiver": "CoverageFit v3.20.29"
+    },
+    "transitionMessaging": {
+      "status": "receiver-driven",
+      "receiver": "CoverageFit v3.20.29",
+      "senderRuntimeChanged": false,
+      "variants": [
+        "homebuyer",
+        "professional",
+        "home_auto",
+        "general_homeowner",
+        "time_sensitive"
+      ],
+      "rule": "The existing normalized handoff feeds one context-sensitive CoverageFit transition and one Home assessment."
+    }
+  },
+  "lowFrictionIntake": {
+    "build": "408-CRO-1.4",
+    "campaignRoutes": [
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/"
+    ],
+    "steps": [
+      "campaign_context",
+      "contact_property_consent"
+    ],
+    "progressiveEnhancement": true,
+    "propertyAddressCollection": "408farmers_step_2",
+    "propertyAddressContinuation": "CoverageFit prefills and does not repeat the property address.",
+    "validationRecovery": "The invalid step is restored and focus moves to the first invalid control.",
+    "buyerFlowChanged": false,
+    "coverageFitChanged": false
+  },
+  "accessibilityAndResponsive": {
+    "build": "408-CRO-1.5",
+    "publicPages": 20,
+    "minimumReflowWidth": 320,
+    "minimumTargetPixels": 44,
+    "mobileControlTextPixels": 16,
+    "skipLinks": true,
+    "focusVisible": true,
+    "reducedMotion": true,
+    "forcedColors": true,
+    "wcagTags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa"
+    ],
+    "buyerArchitectureChanged": false,
+    "coverageFitChanged": false
+  },
+  "promiseConsistency": {
+    "build": "408-CRO-1.6.2.1",
+    "contract": "coverage-review-v1",
+    "stages": [
+      "start",
+      "pre_review_intake",
+      "protection_snapshot",
+      "producer_review",
+      "options_if_fit"
+    ],
+    "coveredRoutes": [
+      "/",
+      "/home/",
+      "/auto-bundle/",
+      "/healthcare/",
+      "/teachers/",
+      "/tech/",
+      "/engineers/",
+      "/buyer/",
+      "/contact/",
+      "/neighbor/",
+      "/score/"
+    ],
+    "campaignIntakeTiming": "about_one_minute_to_begin",
+    "coverageFitAssessmentTiming": "about_five_minutes",
+    "responseTimeGuaranteed": false,
+    "discountAvailability": "verified_during_quoting_and_underwriting",
+    "receiverOutput": "Protection Snapshot",
+    "buyerArchitectureChanged": false,
+    "coverageFitChanged": true
+  },
+  "occupationalEligibilityReview": {
+    "build": "408-CRO-1.6.2.1",
+    "purpose": "professional_discount_eligibility_review",
+    "automatedDecision": false,
+    "verificationOwner": "Dylan Haysbert",
+    "verificationStage": "quoting_and_underwriting",
+    "coverageFitChanged": true
+  },
+  "professionalIntentContinuity": {
+    "build": "408-CRO-1.6.2.1",
+    "contract": "professional-intent-contract.json",
+    "receiver": "CoverageFit v3.20.55",
+    "stages": [
+      "occupational_landing",
+      "professional_intake",
+      "coveragefit_transition",
+      "protection_snapshot_assessment",
+      "completion_delivery",
+      "customer_snapshot",
+      "producer_workspace"
+    ],
+    "automatedEligibilityDecision": false,
+    "additionalQuestions": false,
+    "protectionScoreChanged": false
+  },
+  "intentPayoffAlignment": {
+    "build": "408-CRO-1.6.2.1",
+    "receiver": "CoverageFit v3.20.55",
+    "dashboardTerminologyRemoved": true,
+    "professionalCoverageAndSavingsBalanced": true,
+    "buyerClosingPayoffStrengthened": true,
+    "genericCheckpointPayoffStrengthened": true,
+    "renterHomeAssessmentBlocked": true,
+    "formspreeHardGateAdded": false,
+    "leadPointsPreserved": 2,
+    "assessmentQuestionsChanged": false,
+    "protectionScoreChanged": false
+  },
+  "lifeCampaignFoundation": {
+    "build": "408-LIFE-1.7",
+    "path": "https://408farmers.com/life/",
+    "purpose": "life_campaign_secure_application_initialization_with_first_party_conversion_and_production_certification",
+    "primaryCampaignMessage": "creative_matched_A_B_C_D",
+    "currentPrimaryAction": "three_question_engagement_then_secure_application_start_to_producer_queue",
+    "directContactFallback": "https://408farmers.com/contact/?intent=life",
+    "flow": [
+      "protection_priority",
+      "income_runway",
+      "existing_life_coverage",
+      "legal_identity",
+      "contact_and_residence",
+      "ssn_last4_acknowledgement",
+      "secure_application_initiation"
+    ],
+    "engagementIntakeEnabled": true,
+    "engagementQuestions": [
+      "protection_priority",
+      "income_runway",
+      "existing_life_coverage"
+    ],
+    "applicationInitializationEnabled": true,
+    "applicationFields": [
+      "first_name",
+      "middle_name_optional",
+      "last_name",
+      "gender",
+      "date_of_birth",
+      "residential_address",
+      "residential_address_2_optional",
+      "residential_city",
+      "residential_state",
+      "residential_zip",
+      "email",
+      "phone_optional",
+      "ssn_last4",
+      "application_acknowledgement"
+    ],
+    "sensitiveCollectionEnabled": true,
+    "sensitiveField": "ssn_last4",
+    "sensitivePersistenceEnabled": true,
+    "sensitiveNetworkSubmissionEnabled": true,
+    "sensitiveAnalyticsEnabled": false,
+    "engagementState": "dom_memory_only_non_persistent",
+    "applicationState": "native_form_dom_until_confirmed_encrypted_queue_write",
+    "engagementNetworkSubmission": true,
+    "formSubmissionEnabled": true,
+    "paidTrafficReady": true,
+    "paidTrafficGate": "LIFE-1.7 code certification is complete. Activate paid traffic only after the deployed protected readiness endpoint returns ready:true and one production canary is confirmed in both the encrypted producer queue and first-party conversion summary.",
+    "coverageFitChanged": false,
+    "formspreeChanged": false,
+    "nextSprint": null,
+    "secureSubmissionBoundaryEnabled": true,
+    "secureSubmissionPath": "https://408farmers.com/api/life/application-init",
+    "secureSubmissionMethod": "POST_JSON_same_origin",
+    "producerDeliveryMode": "cloudflare_d1_encrypted_producer_queue",
+    "producerDeliveryAuth": [
+      "cloudflare_access_jwt_rs256",
+      "issuer",
+      "audience",
+      "expiration",
+      "producer_email_allowlist"
+    ],
+    "secureSubmissionPlatform": "cloudflare_pages_advanced_mode",
+    "secureSubmissionRuntimeFile": "_worker.js",
+    "staticAssetFallback": "env.ASSETS.fetch(request)",
+    "staticSecurityHeadersFile": "_headers",
+    "nodeCompatibilityRequired": false,
+    "sensitivePersistenceMode": "aes_256_gcm_encrypted_cloudflare_d1",
+    "producerQueueEnabled": true,
+    "producerQueuePath": "https://408farmers.com/life-ops/",
+    "producerQueueApi": [
+      "/api/life/producer/queue",
+      "/api/life/producer/item",
+      "/api/life/producer/status"
+    ],
+    "producerQueueStatuses": [
+      "new",
+      "initiated",
+      "emailed",
+      "follow_up",
+      "completed",
+      "archived"
+    ],
+    "producerQueueStorageBinding": "LIFE_QUEUE_DB",
+    "producerQueueEncryption": "AES-256-GCM application layer + Cloudflare D1 encryption at rest",
+    "producerQueueBrowserPersistence": false,
+    "producerQueueAudit": "non_pii_created_status_changed_deleted_events",
+    "producerQueuePaidTrafficPrerequisiteComplete": true,
+    "externalProducerRelayRequired": false,
+    "campaignMessageMatchingEnabled": true,
+    "campaignDefaultVariant": "before_anything_changes",
+    "campaignVariants": {
+      "A": "before_anything_changes",
+      "B": "20_minutes",
+      "C": "this_is_the_time",
+      "D": "financial_picture"
+    },
+    "campaignAttributionEnabled": true,
+    "campaignAttributionState": "memory_only_until_encrypted_queue_write",
+    "campaignAttributionKeys": [
+      "channel",
+      "landing_variant",
+      "creative_code",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_content",
+      "utm_term",
+      "campaign_id",
+      "campaign_variant"
+    ],
+    "campaignAttributionPersistence": "encrypted_with_application_payload_in_LIFE_QUEUE_DB",
+    "campaignAttributionAnalyticsEnabled": true,
+    "campaignRoutingDoc": "LIFE-CAMPAIGN-ROUTING.md",
+    "paidTrafficActivationCondition": "GET /api/life/producer/readiness returns ready:true under Cloudflare Access, then one canary application start is confirmed in /life-ops/ and application_start_submitted increments in the first-party funnel.",
+    "conversionMeasurementEnabled": true,
+    "conversionMeasurementMode": "first_party_same_origin_cloudflare_d1_non_pii",
+    "conversionEndpoint": "https://408farmers.com/api/life/conversion",
+    "conversionSchema": "408-life-conversion-v1",
+    "conversionEvents": [
+      "landing_view",
+      "start_clicked",
+      "quick_questions_complete",
+      "application_details_started",
+      "application_start_submitted"
+    ],
+    "conversionDataBoundary": "event_name + random memory-only journey/event UUIDs + normalized campaign attribution only; no applicant fields, answers, IP persistence, browser storage, third-party pixel, CAPI, GA or dataLayer",
+    "conversionDedupe": "unique journey_id + event_name",
+    "conversionProducerApi": "/api/life/producer/conversions",
+    "conversionDashboardEnabled": true,
+    "campaignAttributionAnalyticsScope": "first_party_non_pii_conversion_events_only",
+    "productionReadinessApi": "/api/life/producer/readiness",
+    "productionReadinessProtectedBy": "cloudflare_access_jwt_and_producer_allowlist",
+    "productionReadinessChecks": [
+      "ASSETS binding",
+      "LIFE_QUEUE_DB binding",
+      "D1 schema",
+      "AES-256-GCM encryption key",
+      "408farmers.com allowed origin",
+      "Cloudflare Access team domain",
+      "Access audience",
+      "producer email allowlist"
+    ],
+    "productionCertificationDoc": "LIFE-PRODUCTION-CERTIFICATION.md",
+    "liveProductionSmokeTestPerformed": false,
+    "liveProductionSmokeTestReason": "This build environment cannot inspect or mutate the deployed Cloudflare account. Runtime readiness is verified by the protected endpoint after deployment."
+  }
+}

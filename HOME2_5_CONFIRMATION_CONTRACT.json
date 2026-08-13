@@ -1,0 +1,28 @@
+{
+  "build": "408-HOME-2.5",
+  "route": "/home/",
+  "sequence": "lead submission status -> visible confirmation -> automatic destination continuation",
+  "delayMilliseconds": 1250,
+  "manualContinueAvailable": true,
+  "leadStatuses": {
+    "confirmed": "Request received",
+    "pending": "Delivery continues in the background; review may continue",
+    "unconfirmed": "Delivery is not claimed; saved review may continue",
+    "local-fallback": "Browser-saved review may continue"
+  },
+  "homeownerDestination": {
+    "route": "CoverageFit /transition/?next=/assessment/",
+    "propertyConfirmation": "one-time CoverageFit confirmation",
+    "assessment": "existing Home assessment",
+    "repeatContactOrPropertyEntry": false
+  },
+  "renterDestination": {
+    "route": "/contact/?intent=renters",
+    "coverageFitAssessment": false
+  },
+  "fallback": "If the confirmation controller is unavailable, the existing immediate destination handoff runs.",
+  "privacy": "Confirmation telemetry includes only lead status, destination type, and automatic or manual continuation; identity, contact, address, and free-form data are excluded.",
+  "receiver": "CoverageFit v3.20.56",
+  "receiverChanged": false,
+  "nextSprint": null
+}

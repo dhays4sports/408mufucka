@@ -1,0 +1,47 @@
+{
+  "sprint": "408-FLOW-2.2",
+  "runtime": "408-FLOW-2.2",
+  "receiver": "CoverageFit v3.20.61",
+  "principle": "lead capture is the first interactive funnel step",
+  "formFirstRoutes": ["home", "buyer", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "restoredRoutes": ["home", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "alreadyFormFirstRoutes": ["buyer"],
+  "excludedProductFlows": ["life"],
+  "requiredCommonFields": ["first_name", "last_name", "phone", "email", "consent"],
+  "requiredPropertyFields": ["property_address"],
+  "routeContext": {
+    "home": ["review_context"],
+    "buyer": ["closing_date", "occupancy"],
+    "auto-bundle": ["housing_context"],
+    "healthcare": ["occupation_segment"],
+    "teachers": ["occupation_segment"],
+    "tech": ["occupation_segment"],
+    "engineers": ["occupation_segment"]
+  },
+  "preserved": {
+    "formspree": true,
+    "explicitConsent": true,
+    "attribution": true,
+    "confirmation": true,
+    "branching": true,
+    "zeroRepeatHandoff": true,
+    "coverageFitQuestionTwoStabilization": true
+  },
+  "changed": {
+    "preFormMarketingQuestions": false,
+    "coverageFitAssessment": false,
+    "protectionScore": false,
+    "lifeApplication": false
+  },
+  "unchangedSha256": {
+    "buyer/index.html": "6faa826f96426ec377f93c089ad80587b850625094212c2429295954ad39e6ba",
+    "life/index.html": "99b1636d3c319c6f42ccd402583ecf7acda4850d6b052d17761f4c4f79cbc12e",
+    "contact/index.html": "d3a9392ec3ace091bc76ef0d645dd50a106a3ca9388b9507d8aa25754f5bade6",
+    "neighbor/index.html": "318a98994642cd5009f4774bd459eda3b98ab1987cec32f27b54a5a19630e08f",
+    "index.html": "f97c3cef050559306ced0bee8f5fb2f321c4c3200d1b8ff49493c0a4c3904c8a",
+    "shared/script.js": "c57f176e9515a4186514e5a4fcb7f06abbf3c5246da701711a134616daec798c",
+    "shared/coveragefit-launch.js": "239d8ca692c7f392a1152356cf07c7522aebcb35b6ef6c03891eb82110e9e462",
+    "shared/prospect-profile.js": "9b588ad7003ee4e1ce915f5b75a215b7ccc478f262a6c7824bae26a9b08dc7c3"
+  },
+  "coverageFitProtectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8"
+}

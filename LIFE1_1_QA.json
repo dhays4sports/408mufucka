@@ -1,0 +1,38 @@
+{
+  "sprint": "408-LIFE-1.1",
+  "status": "pass_with_external_receiver_prerequisite_not_mounted",
+  "dedicated": {
+    "passed": 25,
+    "failed": 0
+  },
+  "staticRepository": {
+    "passed": 265,
+    "failed": 0
+  },
+  "linkVerification": {
+    "checked": 272,
+    "broken": 0
+  },
+  "logoIntegration": {
+    "passed": 14,
+    "failed": 0
+  },
+  "localHistoricalNodeRegression": {
+    "passed": 31,
+    "unexpectedFailed": 0,
+    "blockedExternalReceiver": 7,
+    "blockedReason": "The isolated 408FARMERS deployable does not include the paired /mnt/data/coveragefit source tree required by those historical cross-project assertions."
+  },
+  "cssParse": {
+    "stylesheet": "shared/life.css",
+    "syntaxErrors": 0
+  },
+  "securityBoundary": {
+    "applicantFormEnabled": false,
+    "sensitiveCollectionEnabled": false,
+    "formspreeUsedByLifeRoute": false,
+    "coverageFitUsedByLifeRoute": false,
+    "browserApplicantStorageUsed": false,
+    "paidTrafficReady": false
+  }
+}

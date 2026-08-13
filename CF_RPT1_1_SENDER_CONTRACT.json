@@ -1,0 +1,35 @@
+{
+  "sprint": "408-CF-RPT-1.1",
+  "runtime": "408-CF-RPT-1.1",
+  "receiver": "CoverageFit v3.20.62",
+  "routes": ["home", "buyer", "auto-bundle", "healthcare", "teachers", "tech", "engineers"],
+  "entryStage": "after_post_lead_personalized_payoff",
+  "acceptedPromise": {
+    "protectionScore": true,
+    "freeHomeProtectionSnapshot": true,
+    "delivery": "save as PDF or print",
+    "receiverActionLabel": "Save as PDF / Print"
+  },
+  "choices": {
+    "accept": "Continue to CoverageFit",
+    "defer": "Finish for Now"
+  },
+  "guards": {
+    "explicitAcceptRequired": true,
+    "automaticLaunch": false,
+    "timerLaunch": false,
+    "invitationCreatesLead": false,
+    "deferPreservesFirstLead": true,
+    "renterSkipsHomeAssessment": true
+  },
+  "preserved": {
+    "formFirst": true,
+    "postLeadQuestionCount": 3,
+    "consent": true,
+    "campaignAttribution": true,
+    "assessmentQuestions": true,
+    "completedConsultationRecord": true,
+    "twoIntakePoints": true,
+    "protectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8"
+  }
+}

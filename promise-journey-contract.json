@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0",
+  "build": "408-CRO-1.6.2.1",
+  "contract": "coverage-review-v1",
+  "canonicalJourney": [
+    {
+      "stage": "start",
+      "promise": "Start with a Coverage Review, not an instant quote or eligibility result."
+    },
+    {
+      "stage": "intake",
+      "promise": "Share the minimum contact, property, and review context needed to continue without repetition."
+    },
+    {
+      "stage": "snapshot",
+      "promise": "CoverageFit provides an educational Protection Snapshot in about five minutes; it does not make quote, eligibility, underwriting, or coverage decisions."
+    },
+    {
+      "stage": "producer_review",
+      "promise": "Use the completed Snapshot to focus a conversation with Dylan. If Farmers appears to fit, Dylan can verify available discounts and prepare and explain options."
+    }
+  ],
+  "timing": {
+    "campaignIntake": "About one minute to begin",
+    "buyerIntake": "About two minutes to begin",
+    "coverageFitAssessment": "About five minutes",
+    "producerResponsePromise": "No guaranteed response time"
+  },
+  "availabilityDisclosure": "Discounts, eligibility, pricing, and coverage are subject to availability, quoting, underwriting, and the issued policy.",
+  "prohibitedPromises": [
+    "Check My Eligibility",
+    "reach out shortly",
+    "follow up with you shortly",
+    "Fast follow-up",
+    "personally prepare your options",
+    "prepare personalized Farmers coverage options",
+    "personally evaluated by Dylan"
+  ],
+  "coveredRoutes": [
+    "/",
+    "/home/",
+    "/auto-bundle/",
+    "/healthcare/",
+    "/teachers/",
+    "/tech/",
+    "/engineers/",
+    "/buyer/",
+    "/contact/",
+    "/neighbor/",
+    "/score/"
+  ],
+  "receiver": {
+    "release": "CoverageFit v3.20.53",
+    "assessment": "/assessment/",
+    "output": "Protection Snapshot",
+    "changed": true
+  },
+  "professionalEligibilityReview": {
+    "purpose": "Identify occupational-program prospects and request licensed discount verification.",
+    "automatedDecision": false,
+    "verificationOwner": "Dylan Haysbert",
+    "verificationStage": "quoting_and_underwriting",
+    "cta": "See Which Professional Discounts May Apply",
+    "continuityContract": "professional-intent-contract.json"
+  },
+  "bundleRouting": {
+    "homeowner": "CoverageFit Home assessment and Protection Snapshot",
+    "renter": "Direct renters and auto conversation with Dylan after the initial lead submission",
+    "rule": "Renters are not sent through the homeowner assessment."
+  }
+}

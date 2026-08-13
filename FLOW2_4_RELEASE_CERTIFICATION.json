@@ -1,0 +1,56 @@
+{
+  "sprint": "408-FLOW-2.4",
+  "status": "certified_deployable",
+  "certifiedAt": "2026-08-13T18:38:18Z",
+  "senderRuntime": "408-FLOW-2.4",
+  "receiverRuntime": "CoverageFit v3.20.61",
+  "sourceArchives": {
+    "408farmersSha256": "493c5e709be5c430141296c1c341056243c6c3d1ef73511a7ff58a0cb7797810",
+    "coverageFitSha256": "59151b372a8aa617dc854de14af9642b87814f601bbeefebfd7159b0afa0faef"
+  },
+  "verification": {
+    "focusedContract": { "suite": "qa/test-flow-2.4.js", "passed": 60, "failed": 0 },
+    "submitAndDegradedRuntime": { "suite": "qa/test-flow-2.4-runtime.js", "scenarios": 5, "passed": 5, "failed": 0 },
+    "domInteractionSmoke": { "environment": "jsdom 26.1.0", "passed": 26, "failed": 0 },
+    "senderStatic": { "suite": "qa/test-static.py", "passed": 294, "failed": 0 },
+    "senderLinks": { "suite": "qa/check-links.py", "checked": 325, "broken": 0 },
+    "coverageFitQuestionTwo": { "suite": "ASMT1_9_QA.mjs", "passed": 22, "failed": 0 },
+    "coverageFitRegression": { "suite": "RUN_REGRESSION_SUITE.js", "passed": 164, "failed": 0 }
+  },
+  "certifiedBehaviors": {
+    "leadFormFirst": true,
+    "postLeadQuestionsPreserved": true,
+    "invitationAfterPayoff": true,
+    "coverageFitAutomaticLaunch": false,
+    "coverageFitTimerLaunch": false,
+    "coverageFitExplicitAcceptRequired": true,
+    "finishForNowLaunchesCoverageFit": false,
+    "backLaunchesCoverageFit": false,
+    "invitationAssetFailureAutoLaunch": false,
+    "degradedModeExplicitClickRequired": true,
+    "acceptanceSingleFire": true,
+    "engagementOrInvitationSecondLeadRequest": false,
+    "renterHomeAssessmentBlocked": true,
+    "lifeApplicationChanged": false,
+    "coverageFitSourceTreeChanged": false,
+    "coverageFitSourceTreeSha256": "7c3a394e7e1c420c2ab8e0762d9c00037bf078906de8f60989e9d1fc33e0a09f",
+    "protectionScoreSha256": "0cf3190a5bb99aceb0e527f91268247481fd14e67acd81fb35db3accd8a5f2a8"
+  },
+  "postDeployChecks": [
+    "publish the 408FARMERS archive to the repository connected to 408farmers.com",
+    "publish the synchronized CoverageFit archive only if the connected repository is not already at v3.20.61",
+    "submit one controlled lead from Home, Buyer, Auto Bundle, and an occupational route",
+    "complete all three post-lead questions and open the invitation",
+    "wait at least ten seconds without clicking and confirm there is no navigation",
+    "choose Finish for Now and confirm no CoverageFit request or navigation occurs",
+    "repeat and choose Continue to CoverageFit, then confirm the handoff occurs once",
+    "verify renter acceptance opens renter contact options instead of CoverageFit Home",
+    "repeat the invitation flow on a physical iOS or Android device with keyboard and screen-reader spot checks"
+  ],
+  "limitations": {
+    "deployed": false,
+    "liveFormspreeReceiptVerified": false,
+    "physicalDeviceVerified": false,
+    "note": "Certification covers source, runtime, DOM interaction, static, link, and receiver regression checks. Cloudflare deployment, live Formspree delivery, and physical-device evidence remain deployment-stage checks."
+  }
+}

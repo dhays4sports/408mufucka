@@ -1,0 +1,35 @@
+{
+  "sprint": "408-CF-RPT-1.1",
+  "runtime": "408-CF-RPT-1.1",
+  "receiver": "CoverageFit v3.20.62",
+  "status": "paired_deployable_source_certified",
+  "automatedQa": {
+    "focusedSenderChecks": { "passed": 37, "failed": 0 },
+    "flow23Checks": { "passed": 63, "failed": 0 },
+    "flow23RuntimeScenarios": { "passed": 4, "failed": 0 },
+    "flow24Checks": { "passed": 60, "failed": 0 },
+    "flow24RuntimeScenarios": { "passed": 5, "failed": 0 },
+    "home29Checks": { "passed": 16, "failed": 0 },
+    "staticChecks": { "passed": 294, "failed": 0 },
+    "linkChecks": { "passed": 325, "failed": 0 },
+    "pairedCoverageFitRegressionFiles": { "passed": 165, "failed": 0 }
+  },
+  "certified": [
+    "seven property acquisition routes publish the synchronized invitation",
+    "invitation promises a free Snapshot the customer can save as PDF or print",
+    "form-first intake and three post-lead questions remain intact",
+    "CoverageFit requires explicit acceptance and has no timer",
+    "Finish for Now preserves the first lead",
+    "renter branching and LIFE exclusion remain intact",
+    "Protection Score implementation remains byte-certified"
+  ],
+  "manualProductionGates": [
+    "publish both paired archives to their correct Cloudflare-connected repositories",
+    "complete one controlled 408FARMERS lead and confirm the optional invitation copy",
+    "verify Finish for Now causes no CoverageFit request or navigation",
+    "repeat and choose Continue to CoverageFit, then complete the assessment",
+    "save the resulting private Snapshot as PDF and inspect the output"
+  ],
+  "liveDeploymentPerformed": false,
+  "reason": "Repository publishing and live lead/PDF verification require the connected production environments and are not performed by this source-build task."
+}

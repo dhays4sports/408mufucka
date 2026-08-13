@@ -1,0 +1,18 @@
+{
+  "sprint": "408-LIFE-1.6-regression",
+  "passed": 38,
+  "blocked_external_coveragefit": 9,
+  "unexpected_failures": 0,
+  "blocked_tests": [
+    "test-cro-1.4.js",
+    "test-cro-1.5.js",
+    "test-cro-1.6.1.js",
+    "test-cro-1.6.2.1.js",
+    "test-cro-1.6.2.js",
+    "test-cro-1.6.js",
+    "test-np-1.4-cross-repo.js",
+    "test-np-1.5-cross-repo.js",
+    "test-rc-sms-1.9.1.js"
+  ],
+  "unexpected_failure_tests": []
+}

@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "build": "408-HOME-2.7",
+  "route": "/home/qr/{ZIP}/{rate|fit}/",
+  "canonicalCampaign": "home_flyer_{ZIP}_{rate|fit}",
+  "acceptedZip": "exactly five digits",
+  "variants": [
+    "rate",
+    "fit"
+  ],
+  "legacyQueryCompatible": true,
+  "messageMatching": {
+    "surfaces": [
+      "eyebrow",
+      "headline",
+      "supporting_copy",
+      "primary_cta",
+      "reassurance",
+      "sms_starter"
+    ],
+    "ratePromise": "competitive Farmers rate was recently found in the ZIP; every home is rated differently",
+    "fitPromise": "personal review of whether Farmers may be worth comparing; no quote or eligibility decision"
+  },
+  "journey": {
+    "destination": "/home/",
+    "engagementQuestionsChanged": false,
+    "personalizedPayoffChanged": false,
+    "leadCaptureChanged": false,
+    "confirmationChanged": false,
+    "coverageFitAssessmentChanged": false
+  },
+  "attribution": [
+    "campaign",
+    "campaign_id",
+    "campaign_variant",
+    "campaign_zip",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_content"
+  ],
+  "events": [
+    "home_campaign_matched",
+    "home_qr_route_resolved"
+  ],
+  "invalidRouteBehavior": "generic /home experience with no campaign attribution",
+  "privacy": "No name, email, phone, street address, consent value, free-form answer, or report identifier is encoded in the campaign route or campaign telemetry.",
+  "scoring": {
+    "campaignFieldsAreAssessmentEvidence": false,
+    "campaignFieldsAffectProtectionScore": false
+  },
+  "deepRouteAssetResolution": {
+    "strategy": "root-relative public asset and legal URLs in home/index.html",
+    "reason": "Cloudflare 200 rewrite preserves /home/qr/{ZIP}/{variant}/ in the browser address bar",
+    "verifiedRoutes": [
+      "/home/qr/95118/rate/",
+      "/home/qr/95118/fit/",
+      "/home/qr/10001/rate/",
+      "/home/qr/99999/fit/"
+    ],
+    "parentRelativeHomeReferencesAllowed": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "build": "408-HOME-2.6",
+  "journeyContract": "home-review-journey-v1",
+  "receiver": "CoverageFit v3.20.57",
+  "fields": {
+    "home_review_goal": ["farmers_fit", "coverage_fit", "home_auto_bundle", "exploring"],
+    "housing_context": ["owner_occupied", "landlord", "buyer", "renter"],
+    "review_timing": ["shopping_now", "renewal_60", "later", "not_sure"]
+  },
+  "sequence": [
+    "408FARMERS engagement",
+    "personalized payoff",
+    "progressive lead capture",
+    "visible lead confirmation",
+    "private CoverageFit handoff",
+    "one-time property confirmation",
+    "existing CoverageFit assessment"
+  ],
+  "privacy": {
+    "visibleUrlAfterReceptionContainsPersonalData": false,
+    "visibleUrlAfterReceptionContainsIntentFields": false,
+    "contactAndConsentStoredPrivately": true
+  },
+  "scoring": {
+    "intentFieldsAreAssessmentEvidence": false,
+    "intentFieldsAffectProtectionScore": false
+  },
+  "leadPointsPreserved": 2
+}

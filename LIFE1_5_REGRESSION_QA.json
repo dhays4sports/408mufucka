@@ -1,0 +1,40 @@
+{
+  "sprint": "408-LIFE-1.5",
+  "dedicated_qa": {
+    "passed": 55,
+    "failed": 0
+  },
+  "life_1_4_1_regression": {
+    "passed": 24,
+    "failed": 0
+  },
+  "life_1_4_preservation": {
+    "passed": 13,
+    "failed": 0
+  },
+  "static_repository": {
+    "passed": 265,
+    "failed": 0
+  },
+  "local_links": {
+    "checked": 284,
+    "broken": 0
+  },
+  "logo_integration": {
+    "passed": 14,
+    "failed": 0
+  },
+  "historical_local_node": {
+    "passed_files": 37,
+    "blocked_external_coveragefit_prerequisites": 9,
+    "unexpected_failures": 0
+  },
+  "duplicate_id_files": 0,
+  "css_brace_balance": {
+    "shared/life.css": 0,
+    "shared/life-ops.css": 0
+  },
+  "notes": [
+    "Blocked historical tests require the separate paired CoverageFit source tree and are not regressions in this isolated 408FARMERS deployable."
+  ]
+}
